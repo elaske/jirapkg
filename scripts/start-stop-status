@@ -1,0 +1,33 @@
+#!/bin/sh
+# @Author: Evan Laske
+# @Date:   2014-04-22 21:40:28
+# @Last Modified by:   Evan Laske
+# @Last Modified time: 2014-04-22 21:40:28
+
+LOG_FILE=/volume1/Data/logs/jira.log
+JIRA_DIRECTORY=/volume1/@appstore/atlassian/jira/bin
+SUCMD="su -s /bin/sh jira"
+
+# Log the time / date this is called
+date >> $LOG_FILE 2>&1
+
+# Log the arguments passed to this script and the shell being executed
+echo "$0 $*" >> $LOG_FILE 2>&1
+
+# Log the environment variables for debugging
+env >> $LOG_FILE 2>&1
+
+# JIRA Linux service controller script
+
+case "$1" in
+    start)
+        $SUCMD $JIRA_DIRECTORY/start-jira.sh >> $LOG_FILE 2>&1
+        ;;
+    stop)
+        $SUCMD $JIRA_DIRECTORY/stop-jira.sh >> $LOG_FILE 2>&1
+        ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+        ;;
+esac
