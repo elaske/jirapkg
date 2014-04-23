@@ -26,8 +26,11 @@ case "$1" in
     stop)
         $SUCMD $JIRA_DIRECTORY/stop-jira.sh >> $LOG_FILE 2>&1
         ;;
+    status)
+        exit 0
+        ;;
     *)
-        echo "Usage: $0 {start|stop}"
+        echo "Usage: $0 {start|stop|status}"
         exit 1
         ;;
 esac
