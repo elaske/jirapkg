@@ -4,4 +4,12 @@
 # @Last Modified by:   Evan Laske
 # @Last Modified time: 2014-04-22 21:40:28
 
-exit 0;
+# Check to see if the user exists
+synouser --get jira
+if [ $? -ne 0 ]
+then
+    # create user with no password
+    synouser --add jira '' 'JIRA User' '' '' ''
+fi
+
+exit 0
