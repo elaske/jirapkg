@@ -1,1 +1,108 @@
-downloads([{"description":"6.3-m02 (Windows 32 Bit Installer)","zipUrl":"http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-x32.exe","tarUrl":null,"md5":"aa312fd937b02d980cd2aed93dbac7d8","size":"215.3 MB","released":"07-Apr-2014","type":"EAP","platform":"Windows","version":"6.3-m02","releaseNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes","upgradeNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"},{"description":"6.3-m02 (Windows 64 Bit Installer)","zipUrl":"http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-x64.exe","tarUrl":null,"md5":"818d0bc9b5ac9f564ae51264433e5f9c","size":"210.9 MB","released":"07-Apr-2014","type":"EAP","platform":"Windows","version":"6.3-m02","releaseNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes","upgradeNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"},{"description":"6.3-m02 (Linux 32 Bit Installer)","zipUrl":"http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-x32.bin","tarUrl":null,"md5":"d029a5a42034f0a78a735a4f671388d7","size":"209.1 MB","released":"07-Apr-2014","type":"EAP","platform":"Unix","version":"6.3-m02","releaseNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes","upgradeNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"},{"description":"6.3-m02 (Linux 64 Bit Installer)","zipUrl":"http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-x64.bin","tarUrl":null,"md5":"6c01cba4811520a2b5b3c3a2537da32a","size":"207.9 MB","released":"07-Apr-2014","type":"EAP","platform":"Unix","version":"6.3-m02","releaseNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes","upgradeNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"},{"description":"6.3-m02 (ZIP Archive)","zipUrl":"http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02.zip","tarUrl":null,"md5":"7aafde97f15bcbe0f03bbb06244d0d34","size":"162.1 MB","released":"07-Apr-2014","type":"EAP","platform":"Windows","version":"6.3-m02","releaseNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes","upgradeNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"},{"description":"6.3-m02 (TAR.GZ Archive)","zipUrl":"http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02.tar.gz","tarUrl":null,"md5":"f753f74b2106910bd11c1533aa06b98f","size":"155.3 MB","released":"07-Apr-2014","type":"EAP","platform":"Mac OS X, Unix","version":"6.3-m02","releaseNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes","upgradeNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"},{"description":"6.3-m02 WAR (ZIP Archive)","zipUrl":"http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-war.zip","tarUrl":null,"md5":"753a63954edc30e3f865a068a9042d58","size":"158.0 MB","released":"07-Apr-2014","type":"EAP","platform":"Windows","version":"6.3-m02","releaseNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes","upgradeNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"},{"description":"6.3-m02 WAR (TAR.GZ Archive)","zipUrl":"http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-war.tar.gz","tarUrl":null,"md5":"3f84654ad1c48a1c49221f9f4a6b100a","size":"150.1 MB","released":"07-Apr-2014","type":"EAP","platform":"Mac OS X, Unix","version":"6.3-m02","releaseNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes","upgradeNotes":"https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"}])
+downloads(
+[
+  {
+    "description": "6.3-m02 (Windows 32 Bit Installer)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-x32.exe",
+    "tarUrl": null,
+    "md5": "aa312fd937b02d980cd2aed93dbac7d8",
+    "size": "215.3 MB",
+    "released": "07-Apr-2014",
+    "type": "EAP",
+    "platform": "Windows",
+    "version": "6.3-m02",
+    "releaseNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes",
+    "upgradeNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"
+  },
+  {
+    "description": "6.3-m02 (Windows 64 Bit Installer)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-x64.exe",
+    "tarUrl": null,
+    "md5": "818d0bc9b5ac9f564ae51264433e5f9c",
+    "size": "210.9 MB",
+    "released": "07-Apr-2014",
+    "type": "EAP",
+    "platform": "Windows",
+    "version": "6.3-m02",
+    "releaseNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes",
+    "upgradeNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"
+  },
+  {
+    "description": "6.3-m02 (Linux 32 Bit Installer)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-x32.bin",
+    "tarUrl": null,
+    "md5": "d029a5a42034f0a78a735a4f671388d7",
+    "size": "209.1 MB",
+    "released": "07-Apr-2014",
+    "type": "EAP",
+    "platform": "Unix",
+    "version": "6.3-m02",
+    "releaseNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes",
+    "upgradeNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"
+  },
+  {
+    "description": "6.3-m02 (Linux 64 Bit Installer)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-x64.bin",
+    "tarUrl": null,
+    "md5": "6c01cba4811520a2b5b3c3a2537da32a",
+    "size": "207.9 MB",
+    "released": "07-Apr-2014",
+    "type": "EAP",
+    "platform": "Unix",
+    "version": "6.3-m02",
+    "releaseNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes",
+    "upgradeNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"
+  },
+  {
+    "description": "6.3-m02 (ZIP Archive)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02.zip",
+    "tarUrl": null,
+    "md5": "7aafde97f15bcbe0f03bbb06244d0d34",
+    "size": "162.1 MB",
+    "released": "07-Apr-2014",
+    "type": "EAP",
+    "platform": "Windows",
+    "version": "6.3-m02",
+    "releaseNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes",
+    "upgradeNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"
+  },
+  {
+    "description": "6.3-m02 (TAR.GZ Archive)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02.tar.gz",
+    "tarUrl": null,
+    "md5": "f753f74b2106910bd11c1533aa06b98f",
+    "size": "155.3 MB",
+    "released": "07-Apr-2014",
+    "type": "EAP",
+    "platform": "Mac OS X, Unix",
+    "version": "6.3-m02",
+    "releaseNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes",
+    "upgradeNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"
+  },
+  {
+    "description": "6.3-m02 WAR (ZIP Archive)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-war.zip",
+    "tarUrl": null,
+    "md5": "753a63954edc30e3f865a068a9042d58",
+    "size": "158.0 MB",
+    "released": "07-Apr-2014",
+    "type": "EAP",
+    "platform": "Windows",
+    "version": "6.3-m02",
+    "releaseNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes",
+    "upgradeNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"
+  },
+  {
+    "description": "6.3-m02 WAR (TAR.GZ Archive)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3-m02-war.tar.gz",
+    "tarUrl": null,
+    "md5": "3f84654ad1c48a1c49221f9f4a6b100a",
+    "size": "150.1 MB",
+    "released": "07-Apr-2014",
+    "type": "EAP",
+    "platform": "Mac OS X, Unix",
+    "version": "6.3-m02",
+    "releaseNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Release+Notes",
+    "upgradeNotes": "https://confluence.atlassian.com/display/JIRA/JIRA+6.3+EAP+2+(m02)+Upgrade+Notes"
+  }
+]
+)

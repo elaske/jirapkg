@@ -214,4 +214,30 @@ Saving to: `jira.json.1'
 
 2014-04-24 22:52:18 (677 MB/s) - `jira.json.1' saved [3768/3768]
 
-evan@Ubuntu1204LTS:~/jirapkg$ ^C
+evan@Ubuntu1204LTS:~/jirapkg$
+evan@Ubuntu1204LTS:~/jirapkg$ wget https://my.atlassian.com/download/feeds/archived/jira.json
+--2014-04-24 23:55:30--  https://my.atlassian.com/download/feeds/archived/jira.json
+Resolving my.atlassian.com (my.atlassian.com)... 131.103.28.9
+Connecting to my.atlassian.com (my.atlassian.com)|131.103.28.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 465102 (454K) [application/json]
+Saving to: `jira.json'
+
+100%[============================================================================================================>] 465,102     1.17M/s   in 0.4s    
+
+2014-04-24 23:55:31 (1.17 MB/s) - `jira.json' saved [465102/465102]
+
+evan@Ubuntu1204LTS:~/jirapkg$ 
+evan@Ubuntu1204LTS:~/jirapkg$ wget https://www.atlassian.com/docroot/wac/resources/wac/js/download_form.js?ver=20130219
+--2014-04-24 23:58:28--  https://www.atlassian.com/docroot/wac/resources/wac/js/download_form.js?ver=20130219
+Resolving www.atlassian.com (www.atlassian.com)... 131.103.28.5
+Connecting to www.atlassian.com (www.atlassian.com)|131.103.28.5|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 29048 (28K) [text/javascript]
+Saving to: `download_form.js?ver=20130219'
+
+100%[============================================================================================================>] 29,048      --.-K/s   in 0.05s   
+
+2014-04-24 23:58:28 (520 KB/s) - `download_form.js?ver=20130219' saved [29048/29048]
+
+evan@Ubuntu1204LTS:~/jirapkg$
