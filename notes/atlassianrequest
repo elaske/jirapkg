@@ -185,3 +185,33 @@ Saving to: `jira.json'
 2014-04-24 23:07:47 (311 MB/s) - `jira.json' saved [3968/3968]
 
 evan@ubuntu:~/Documents/jirapkg$ 
+
+
+
+
+
+evan@Ubuntu1204LTS:~/jirapkg$ wget https://my.atlassian.com/download/feeds/eap/jira.json?callback=jQuery172012814269843511283_1398397477301
+--2014-04-24 22:52:06--  https://my.atlassian.com/download/feeds/eap/jira.json?callback=jQuery172012814269843511283_1398397477301
+Resolving my.atlassian.com (my.atlassian.com)... 131.103.28.9
+Connecting to my.atlassian.com (my.atlassian.com)|131.103.28.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3968 (3.9K) [application/json]
+Saving to: `jira.json?callback=jQuery172012814269843511283_1398397477301'
+
+100%[============================================================================================================>] 3,968       --.-K/s   in 0s      
+
+2014-04-24 22:52:06 (904 MB/s) - `jira.json?callback=jQuery172012814269843511283_1398397477301' saved [3968/3968]
+
+evan@Ubuntu1204LTS:~/jirapkg$ wget https://my.atlassian.com/download/feeds/current/jira.json
+--2014-04-24 22:52:18--  https://my.atlassian.com/download/feeds/current/jira.json
+Resolving my.atlassian.com (my.atlassian.com)... 131.103.28.9
+Connecting to my.atlassian.com (my.atlassian.com)|131.103.28.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3768 (3.7K) [application/json]
+Saving to: `jira.json.1'
+
+100%[============================================================================================================>] 3,768       --.-K/s   in 0s      
+
+2014-04-24 22:52:18 (677 MB/s) - `jira.json.1' saved [3768/3768]
+
+evan@Ubuntu1204LTS:~/jirapkg$ ^C
