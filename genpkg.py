@@ -3,7 +3,7 @@
 # @Author: Evan Laske
 # @Date:   2014-04-07 23:21:58
 # @Last Modified by:   evan
-# @Last Modified time: 2014-04-26 02:16:50
+# @Last Modified time: 2014-04-26 17:59:25
 
 import urllib2
 import json
@@ -21,9 +21,9 @@ def getFeed(url):
     data = json.loads(json_result)['json']
     return data
 
-def getDownload(download_data):
+def getDownloadData(download_data):
     # Get the normal tar.gz download file - single it out and remove the WAR one.
-    return [e for e in download_data if 'TAR.GZ' in e['description'] and 'WAR' not in e['description']][0]
+    return [e for e in download_data if 'TAR.GZ' in e['description'] and 'WAR' not in e['description']]
 
 def getDownloadURL(download):
     return download['zipUrl']
@@ -87,11 +87,26 @@ def downloadTAR(url):
     #file_data = chunk_read(response, report_hook=chunk_report)
     chunk_save(response, url.split('/')[-1], report_hook=chunk_report)
 
+def allDownloads():
+    eap = getDownloadData(getFeed(getURL('eap')))
+    current = getDownloadData(getFeed(getURL('current')))
+    archived = getDownloadData(getFeed(getURL('archived')))
+    return list(eap + current + archived)
+
+def defaultDownload():
+    # The default download is the current version
+    return getDownloadData(getFeed(getURL('current')))[0]
+
+
 def main():
-    print getURL('current')
-    print getDownload(getFeed(getURL('current')))
-    url = getDownloadURL(getDownload(getFeed(getURL('current'))))
-    downloadTAR(url)
+    for item in allDownloads():
+        print item['version']
+
+    print defaultDownload()['version']
+
+    #print getDownload(getFeed(getURL('current')))
+    #url = getDownloadURL(getDownload(getFeed(getURL('current'))))
+    #downloadTAR(url)
 
 # Standard main call
 if __name__ == "__main__":
