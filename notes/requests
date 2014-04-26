@@ -1,0 +1,11 @@
+Atlassian Requests Notes
+-------------------------------------------------------------------------------
+
+Nominal URL (https://www.atlassian.com/software/jira/download)
+- Early-Access Program JSON (eap.jira.json)
+- Current JSON (current.jira.json)
+- Download JavaScript (download_form.js?ver=20130617)
+
+Archive URL (https://www.atlassian.com/software/jira/download-archives)
+- Archived JSON (archived.jira.json)
+- Download JavaScript (download_form.js?ver=20130219)

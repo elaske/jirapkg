@@ -1,0 +1,12 @@
+Miscellaneous Notes
+-------------------------------------------------------------------------------
+
+32-bit versions are available in both TAR.GZ and installer formats.
+64-bit version is only available in the installer format.
+
+The only reason to use the 64-bit version is if the NAS has 4GB+ installed.
+Based on the processor list, the i3s and D2700s are the only ones that even
+support 64-bit. The real question is whether or not the memory capacity on the
+models is over 4GB. Does Synology even distribute a 64-bit OS?
+
+Only the "Large Scale"-category NAS support over 4GB of RAM (DS3612xs+)

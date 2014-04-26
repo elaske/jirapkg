@@ -1,0 +1,13 @@
+{
+  "baseUrl": "http://diskstation:8080",
+  "version": "6.2.3",
+  "versionNumbers": [
+    6,
+    2,
+    3
+  ],
+  "buildNumber": 6260,
+  "buildDate": "2014-04-15T00:00:00.000-0600",
+  "scmInfo": "63ef1d6dac3f4f4d7db4c1effd405ba38ccdc558",
+  "serverTitle": "JIRA"
+}

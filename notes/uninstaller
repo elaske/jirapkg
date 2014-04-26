@@ -1,0 +1,199 @@
+DiskStation> /volume1/@appstore/atlassian/jira/uninstall 
+testing JVM in /volume1/@appstore/atlassian/jira/jre ...
+Before continuing, please ensure you have exported your data via JIRA's Administration section.
+
+Are you ready to completely remove JIRA 6.2.3 and all of its components?
+Yes [y, Enter], No [n]
+
+java.io.IOException: Cannot run program "/volume1/@appstore/atlassian/jira/bin/stop-jira.sh" (in directory "/volume1/@appstore/atlassian/jira/."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchOtherwise(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchApplication(Unknown Source)
+	at com.install4j.runtime.beans.actions.misc.RunExecutableAction.execute(Unknown Source)
+	at com.install4j.runtime.beans.actions.SystemInstallOrUninstallAction.uninstall(Unknown Source)
+	at com.install4j.runtime.installer.UninstallerContextImpl.performActionInt(Unknown Source)
+	at com.install4j.runtime.installer.ContextImpl.performAction(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.executeActions(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.handleCommand(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.start(Unknown Source)
+	at com.install4j.runtime.installer.Uninstaller.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.launcher.Launcher.main(Unknown Source)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 18 more
+java.io.IOException: Cannot run program "/volume1/@appstore/atlassian/jira/bin/install_linux_service.sh" (in directory "/volume1/@appstore/atlassian/jira/."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchOtherwise(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchApplication(Unknown Source)
+	at com.install4j.runtime.beans.actions.misc.RunExecutableAction.execute(Unknown Source)
+	at com.install4j.runtime.beans.actions.SystemInstallOrUninstallAction.uninstall(Unknown Source)
+	at com.install4j.runtime.installer.UninstallerContextImpl.performActionInt(Unknown Source)
+	at com.install4j.runtime.installer.ContextImpl.performAction(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.executeActions(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.handleCommand(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.start(Unknown Source)
+	at com.install4j.runtime.installer.Uninstaller.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.launcher.Launcher.main(Unknown Source)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 18 more
+java.io.IOException: Cannot run program "/volume1/@appstore/atlassian/jira/bin/setup_user.sh" (in directory "/volume1/@appstore/atlassian/jira/."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchOtherwise(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchApplication(Unknown Source)
+	at com.install4j.runtime.beans.actions.misc.RunExecutableAction.execute(Unknown Source)
+	at com.install4j.runtime.beans.actions.SystemInstallOrUninstallAction.uninstall(Unknown Source)
+	at com.install4j.runtime.installer.UninstallerContextImpl.performActionInt(Unknown Source)
+	at com.install4j.runtime.installer.ContextImpl.performAction(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.executeActions(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.handleCommand(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.start(Unknown Source)
+	at com.install4j.runtime.installer.Uninstaller.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.launcher.Launcher.main(Unknown Source)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 18 more
+Error while attempting to delete JIRA's user account. Please delete it manually later.
+Uninstalling JIRA 6.2.3 ...
+Apr 24, 2014 8:42:00 PM java.util.prefs.FileSystemPreferences$1 run
+INFO: Created user preferences directory.
+Apr 24, 2014 8:42:00 PM java.util.prefs.FileSystemPreferences$2 run
+INFO: Created system preferences directory in java.home.
+The following files/directories were not deleted since they contain files with potentially important logs or configurations you may wish to retain. If you do not need to keep these files, however, you can safely delete these directories.
+/volume1/@appstore/atlassian/jira/logs
+/volume1/@appstore/atlassian/jira/lib
+/volume1/@appstore/atlassian/jira/conf
+/volume1/@appstore/atlassian/jira
+/volume1/@appstore/atlassian
+
+DiskStation>
+DiskStation>
+DiskStation>
+DiskStation>
+DiskStation>
+DiskStation>
+DiskStation>
+DiskStation>
+DiskStation>
+DiskStation> /volume1/@appstore/atlassian/confluence/uninstall 
+testing JVM in /volume1/@appstore/atlassian/confluence/jre ...
+Are you sure you want to completely remove Confluence 5.4.4 and all of its components?
+Yes [y, Enter], No [n]
+
+java.io.IOException: Cannot run program "/volume1/@appstore/atlassian/confluence/bin/stop-confluence.sh" (in directory "/volume1/@appstore/atlassian/confluence/."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchOtherwise(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchApplication(Unknown Source)
+	at com.install4j.runtime.beans.actions.misc.RunExecutableAction.execute(Unknown Source)
+	at com.install4j.runtime.beans.actions.SystemInstallOrUninstallAction.uninstall(Unknown Source)
+	at com.install4j.runtime.installer.UninstallerContextImpl.performActionInt(Unknown Source)
+	at com.install4j.runtime.installer.ContextImpl.performAction(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.executeActions(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.handleCommand(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.start(Unknown Source)
+	at com.install4j.runtime.installer.Uninstaller.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.launcher.Launcher.main(Unknown Source)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 18 more
+java.io.IOException: Cannot run program "/volume1/@appstore/atlassian/confluence/bin/install_linux_service.sh" (in directory "/volume1/@appstore/atlassian/confluence/."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchOtherwise(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchApplication(Unknown Source)
+	at com.install4j.runtime.beans.actions.misc.RunExecutableAction.execute(Unknown Source)
+	at com.install4j.runtime.beans.actions.SystemInstallOrUninstallAction.uninstall(Unknown Source)
+	at com.install4j.runtime.installer.UninstallerContextImpl.performActionInt(Unknown Source)
+	at com.install4j.runtime.installer.ContextImpl.performAction(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.executeActions(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.handleCommand(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.start(Unknown Source)
+	at com.install4j.runtime.installer.Uninstaller.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.launcher.Launcher.main(Unknown Source)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 18 more
+java.io.IOException: Cannot run program "/volume1/@appstore/atlassian/confluence/bin/setup_user.sh" (in directory "/volume1/@appstore/atlassian/confluence/."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchOtherwise(Unknown Source)
+	at com.install4j.runtime.installer.helper.launching.LaunchHelper.launchApplication(Unknown Source)
+	at com.install4j.runtime.beans.actions.misc.RunExecutableAction.execute(Unknown Source)
+	at com.install4j.runtime.beans.actions.SystemInstallOrUninstallAction.uninstall(Unknown Source)
+	at com.install4j.runtime.installer.UninstallerContextImpl.performActionInt(Unknown Source)
+	at com.install4j.runtime.installer.ContextImpl.performAction(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.executeActions(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.handleCommand(Unknown Source)
+	at com.install4j.runtime.installer.controller.Controller.start(Unknown Source)
+	at com.install4j.runtime.installer.Uninstaller.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.launcher.Launcher.main(Unknown Source)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 18 more
+Error while attempting to delete Confluence's user account. Please delete it manually later.
+Uninstalling Confluence 5.4.4 ...
+Apr 24, 2014 8:42:49 PM java.util.prefs.FileSystemPreferences$2 run
+INFO: Created system preferences directory in java.home.
+The following files/directories were not deleted since they contain files with potentially important logs or configurations you may wish to retain. If you do not need to keep these files, however, you can safely delete these directories.
+/volume1/@appstore/atlassian/confluence/logs
+/volume1/@appstore/atlassian/confluence/confluence/WEB-INF/lib
+/volume1/@appstore/atlassian/confluence/confluence/WEB-INF
+/volume1/@appstore/atlassian/confluence/confluence
+/volume1/@appstore/atlassian/confluence
+
+DiskStation> 
+DiskStation> 
+DiskStation> 
+DiskStation> 
+DiskStation> 
+DiskStation> ls /volume1/@appstore/atlassian/jira
+conf  lib   logs
+DiskStation> ls /volume1/@appstore/atlassian/    
+application-data  confluence        jira
+DiskStation> rm -rf /volume1/@appstore/atlassian

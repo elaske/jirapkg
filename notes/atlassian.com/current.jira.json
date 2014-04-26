@@ -1,0 +1,108 @@
+downloads(
+[
+  {
+    "description": "6.2.3 (Windows 32 Bit Installer)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.2.3-x32.exe",
+    "tarUrl": null,
+    "md5": "80f56c3185fa6eae0fad5e99bf60b9eb",
+    "size": "211.4 MB",
+    "released": "15-Apr-2014",
+    "type": "Binary",
+    "platform": "Windows",
+    "version": "6.2.3",
+    "releaseNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Release+Notes",
+    "upgradeNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Upgrade+Notes"
+  },
+  {
+    "description": "6.2.3 (Windows 64 Bit Installer)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.2.3-x64.exe",
+    "tarUrl": null,
+    "md5": "4b87298d004cc2a73a96b0a9fef68793",
+    "size": "207.0 MB",
+    "released": "15-Apr-2014",
+    "type": "Binary",
+    "platform": "Windows",
+    "version": "6.2.3",
+    "releaseNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Release+Notes",
+    "upgradeNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Upgrade+Notes"
+  },
+  {
+    "description": "6.2.3 (Linux 32 Bit Installer)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.2.3-x32.bin",
+    "tarUrl": null,
+    "md5": "bccfb717bb68e789390dce55066b6965",
+    "size": "205.3 MB",
+    "released": "15-Apr-2014",
+    "type": "Binary",
+    "platform": "Unix",
+    "version": "6.2.3",
+    "releaseNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Release+Notes",
+    "upgradeNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Upgrade+Notes"
+  },
+  {
+    "description": "6.2.3 (Linux 64 Bit Installer)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.2.3-x64.bin",
+    "tarUrl": null,
+    "md5": "517b865087ed01333675273076286703",
+    "size": "204.1 MB",
+    "released": "15-Apr-2014",
+    "type": "Binary",
+    "platform": "Unix",
+    "version": "6.2.3",
+    "releaseNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Release+Notes",
+    "upgradeNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Upgrade+Notes"
+  },
+  {
+    "description": "6.2.3 (ZIP Archive)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.2.3.zip",
+    "tarUrl": null,
+    "md5": "04fc1bcf823d887dbbac9f7de7d94548",
+    "size": "158.2 MB",
+    "released": "15-Apr-2014",
+    "type": "Binary",
+    "platform": "Windows",
+    "version": "6.2.3",
+    "releaseNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Release+Notes",
+    "upgradeNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Upgrade+Notes"
+  },
+  {
+    "description": "6.2.3 (TAR.GZ Archive)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.2.3.tar.gz",
+    "tarUrl": null,
+    "md5": "745170a7d4fed335cf275ecdbebdfe9b",
+    "size": "152.5 MB",
+    "released": "15-Apr-2014",
+    "type": "Binary",
+    "platform": "Mac OS X, Unix",
+    "version": "6.2.3",
+    "releaseNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Release+Notes",
+    "upgradeNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Upgrade+Notes"
+  },
+  {
+    "description": "6.2.3 WAR (ZIP Archive)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.2.3-war.zip",
+    "tarUrl": null,
+    "md5": "7edd0df305e399388f3ed4b20b0b96fb",
+    "size": "154.2 MB",
+    "released": "15-Apr-2014",
+    "type": "Binary",
+    "platform": "Windows",
+    "version": "6.2.3",
+    "releaseNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Release+Notes",
+    "upgradeNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Upgrade+Notes"
+  },
+  {
+    "description": "6.2.3 WAR (TAR.GZ Archive)",
+    "zipUrl": "http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.2.3-war.tar.gz",
+    "tarUrl": null,
+    "md5": "72adee05956aa1bb0662346feb528bf4",
+    "size": "147.4 MB",
+    "released": "15-Apr-2014",
+    "type": "Binary",
+    "platform": "Mac OS X, Unix",
+    "version": "6.2.3",
+    "releaseNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Release+Notes",
+    "upgradeNotes": "http://confluence.atlassian.com/display/JIRA/JIRA+6.2.3+Upgrade+Notes"
+  }
+]
+)

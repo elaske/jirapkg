@@ -4,4 +4,9 @@
 # @Last Modified by:   Evan Laske
 # @Last Modified time: 2014-04-22 21:40:18
 
+# From the 3rd-Party Apps Developer Guide:
+# "This script is run before the package files are transferred to @appstore. 
+# You can check if the installation requirements meet the DSM or package 
+# version, or if some services are enabled in this script."
+
 exit 0;
