@@ -1,0 +1,567 @@
+Message-ID: <549582136.39196.1398537454860.JavaMail.svc_confluence_prod@node209>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_39195_415295498.1398537454859"
+
+------=_Part_39195_415295498.1398537454859
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Database Setup For MySQL</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Database Setup For MySQL</h1>
+    <div class=3D"Section1">
+        <div class=3D"sectionColumnWrapper">
+<div class=3D"sectionMacro">
+<div class=3D"sectionMacroRow">
+<div class=3D"columnMacro">
+<p>This page provides instructions for configuring Confluence to use the <a=
+ href=3D"http://www.mysql.com" class=3D"external-link" rel=3D"nofollow">MyS=
+QL database</a>.</p>
+<h2 id=3D"DatabaseSetupForMySQL-Step1.Checktheprerequisites">Step 1. Check =
+the prerequisites</h2>
+<p>Check the following before you start:</p>
+<ul>
+<li>Check that your version of MySQL is supported. See <a href=3D"/display/=
+DOC/Supported+Platforms">Supported Platforms</a>.</li>
+<li>If you have been evaluating Confluence and wish to transfer your data t=
+o a new database, consult the following guide first: <a href=3D"/display/DO=
+C/Migrating+to+Another+Database">Migrating to Another Database</a>.</li>
+<li>If you are migrating from another database, consult the following guide=
+ first: <a href=3D"/display/DOC/Migrating+to+Another+Database">Migrating to=
+ Another Database</a>.</li>
+</ul>
+<h2 id=3D"DatabaseSetupForMySQL-Step2.InstallMySQLServer">Step 2. Install M=
+ySQL Server</h2>
+<p><span class=3D"confluence-anchor-link" id=3D"DatabaseSetupForMySQL-insta=
+llmysqlserver"></span>If you do not already have an operational MySQL datab=
+ase server, install 'MySQL Community Edition'. Download the installation pa=
+ckage from the <a href=3D"http://dev.mysql.com/downloads/" class=3D"externa=
+l-link" rel=3D"nofollow">MySQL download page</a> and follow the instruction=
+s in the <a href=3D"http://dev.mysql.com/doc/index-topic.html" class=3D"ext=
+ernal-link" rel=3D"nofollow">MySQL documentation</a>.</p>
+</div>
+<div class=3D"columnMacro" style=3D"width:400px;min-width:400px;max-width:4=
+00px;">
+<div class=3D"panel" style=3D"border-width: 1px;">
+<div class=3D"panelContent">=20
+<p><strong>On this page:</strong></p>
+<style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1398537454764 {padding: 0px;}
+div.rbtoc1398537454764 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1398537454764 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1398537454764">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#DatabaseSetupForMySQL-Step1.Checktheprerequisites">Step 1. =
+Check the prerequisites</a></li>=20
+<li><a href=3D"#DatabaseSetupForMySQL-Step2.InstallMySQLServer">Step 2. Ins=
+tall MySQL Server</a></li>=20
+<li><a href=3D"#DatabaseSetupForMySQL-Step3.ConfigureMySQLServer">Step 3. C=
+onfigure MySQL Server</a></li>=20
+<li><a href=3D"#DatabaseSetupForMySQL-Step4.SetupyourMySQLdatabaseanduser">=
+Step 4. Set up your MySQL database and user</a></li>=20
+<li><a href=3D"#DatabaseSetupForMySQL-Step5.InstallConfluence">Step 5. Inst=
+all Confluence</a></li>=20
+<li><a href=3D"#DatabaseSetupForMySQL-Step6.DownloadandinstalltheMySQLdatab=
+asedriver">Step 6. Download and install the MySQL database driver</a></li>=
+=20
+<li><a href=3D"#DatabaseSetupForMySQL-Step7.Checksettingsforinternationalis=
+ation">Step 7. Check settings for internationalisation</a></li>=20
+<li><a href=3D"#DatabaseSetupForMySQL-Step8.Setupyourdatabaseconnectioninth=
+eConfluenceSetupWizard">Step 8. Set up your database connection in the Conf=
+luence Setup Wizard</a></li>=20
+<li><a href=3D"#DatabaseSetupForMySQL-Troubleshooting">Troubleshooting</a><=
+/li>=20
+</ul>=20
+</div>
+<p><strong>Related pages:</strong></p>
+<ul>
+<li><a href=3D"/display/DOC/Configuring+Database+Character+Encoding">Config=
+uring Database Character Encoding</a></li>
+<li><a href=3D"/display/DOC/Database+Configuration">Database Configuration<=
+/a></li>
+<li><a href=3D"/display/CONFKB/Known+Issues+for+MySQL">Known Issues for MyS=
+QL</a></li>
+<li><a href=3D"/display/DOC/Confluence+Installation+and+Upgrade+Guide">Conf=
+luence Installation and Upgrade Guide</a></li>
+</ul>=20
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 id=3D"DatabaseSetupForMySQL-Step3.ConfigureMySQLServer">Step 3. Configu=
+re MySQL Server</h2>
+<p>In this step, you will configure your MySQL database server.</p>
+<p><em><strong>Note:</strong> If you intend to connect Confluence to an exi=
+sting MySQL database server, we strongly recommend that you reconfigure thi=
+s database server by running through the configuration steps in the MySQL i=
+nstallation wizard as described below</em><em>.</em></p>
+<p><strong>To configure MySQL Server:</strong></p>
+<ol>
+<li>Run the MySQL installation wizard:<br />
+<ol>
+<li>If you are connecting Confluence to your existing MySQL server, choose =
+<strong>Reconfigure Instance</strong>.</li>
+<li>Choose <strong>Advanced Configuration</strong>.</li>
+<li>Choose the&nbsp;<strong>type of MySQL Server</strong> that best suits y=
+our hardware requirements. This will affect the MySQL Server's usage of mem=
+ory, disk and CPU resources. Refer to the <a href=3D"http://dev.mysql.com/d=
+oc/mysql-windows-excerpt/5.0/en/mysql-config-wizard-server-type.html" class=
+=3D"external-link" rel=3D"nofollow">MySQL documentation</a> for further inf=
+ormation.</li>
+<li>Choose <strong>Transactional Database Only</strong> to ensure that your=
+ MySQL database will use&nbsp;<strong>InnoDB</strong> as its default storag=
+e engine.<br /> <em>It is</em> <strong><em>highly recommended</em></strong>=
+ <em>that you only use the InnoDB storage engine with Confluence. Avoid usi=
+ng the MyISAM storage engine as this can lead to data corruption.</em></li>
+<li>Set the <strong>InnoDB Tablespace</strong> settings to your requirement=
+s. (The default settings are acceptable.)</li>
+<li>Set the approximate&nbsp;<strong>number of concurrent connections</stro=
+ng> permitted to suit your Confluence usage requirements. You can use one o=
+f the presets or enter a number manually. Refer to the <a href=3D"http://de=
+v.mysql.com/doc/mysql-windows-excerpt/5.0/en/mysql-config-wizard-connection=
+s.html" class=3D"external-link" rel=3D"nofollow">MySQL documentation</a> fo=
+r further information.</li>
+<li>For the <strong>networking options</strong>, ensure the <strong>Enable =
+TCP/IP Networking</strong> and <strong>Enable Strict Mode</strong> options =
+are selected (default). Refer to the MySQL documentation on setting the <a =
+href=3D"http://dev.mysql.com/doc/mysql-windows-excerpt/5.0/en/mysql-config-=
+wizard-networking.html" class=3D"external-link" rel=3D"nofollow">networking=
+</a> and <a href=3D"http://dev.mysql.com/doc/refman/5.0/en/server-sql-mode.=
+html" class=3D"external-link" rel=3D"nofollow">server SQL modes</a> for fur=
+ther information.</li>
+<li>For the MySQL server's <strong>default character set</strong>, choose <=
+strong>Best Support For Multilingualism</strong> (in other words, UTF-8). T=
+his will ensure Confluence's support for internationalisation. For more inf=
+ormation, see <a href=3D"/display/DOC/Configuring+Database+Character+Encodi=
+ng">Configuring Database Character Encoding</a>.</li>
+<li>For the Windows configuration option, choose whether or not to install =
+the MySQL Server as a Windows service. If your hardware is going to be used=
+ as a dedicated MySQL Server, you may wish to choose the options to <strong=
+>Install As Windows Service</strong> (and <strong>Launch the MySQL Server a=
+utomatically</strong>). Refer to the <a href=3D"http://dev.mysql.com/doc/my=
+sql-windows-excerpt/5.0/en/mysql-config-wizard-service.html" class=3D"exter=
+nal-link" rel=3D"nofollow">MySQL documentation</a> for further information.=
+<br /> <em><strong>Note:</strong> If you choose not to install the MySQL Se=
+rver as a Windows Service, you will need to ensure that the database servic=
+e has been started before running Confluence.</em></li>
+<li>Select <strong>Modify Security Settings</strong> to enter and set your =
+MySQL Server (root) access password.</li>
+</ol></li>
+<li><span class=3D"confluence-anchor-link" id=3D"DatabaseSetupForMySQL-conf=
+igure_transaction_isolation_level"></span>Edit the <code>my.cnf</code> file=
+ (often named <code>my.ini</code> on Windows operating systems) in your MyS=
+QL server. Locate the <code>[mysqld]</code>section in the file, and add or =
+modify the following parameters:<br />
+<ul>
+<li><p>Specify the default character set to be UTF-8:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">[mysqld]
+...
+character-set-server=3Dutf8
+collation-server=3Dutf8_bin
+...
+</pre>=20
+</div>
+</div></li>
+<li><p>Set the default storage engine to InnoDB:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: plain; gutter: false" style=3D"font=
+-size:12px;">[mysqld]
+...
+default-storage-engine=3DINNODB
+...
+</pre>=20
+</div>
+</div></li>
+<li><p>Specify the value of <code>max_allowed_packet</code> to be at least =
+32M:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: plain; gutter: false" style=3D"font=
+-size:12px;">[mysqld]
+...
+max_allowed_packet=3D32M
+...
+</pre>=20
+</div>
+</div></li>
+<li><p>Ensure the sql_mode parameter does not specify NO_AUTO_VALUE_ON_ZERO=
+</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">// remove this if it exists
+sql_mode =3D NO_AUTO_VALUE_ON_ZERO</pre>=20
+</div>
+</div><p>(Refer to&nbsp;<a href=3D"http://dev.mysql.com/doc/refman/5.0/en/o=
+ption-files.html" class=3D"external-link" rel=3D"nofollow">MySQL Option Fil=
+es</a>&nbsp;for detailed instructions on editing&nbsp;<code>my.cnf</code>&n=
+bsp;and&nbsp;<code>my.ini</code>.)</p><p>&nbsp;</p></li>
+</ul></li>
+<li>Restart your MySQL server for the changes to take effect:<br />
+<ul>
+<li>On Windows, use the Windows Services manager to restart the service.</l=
+i>
+<li>On Linux:
+<ul>
+<li>Run one of the following commands, depending on your setup: '<code>/etc=
+/init.d/mysqld stop</code>' or '<code>/etc/init.d/mysql stop</code>' or '<c=
+ode>service mysqld stop</code>'.</li>
+<li>Then run the same command again, replacing '<code>stop</code>' with '<c=
+ode>start</code>'.</li>
+</ul></li>
+<li>On Mac OS X, run '<code>sudo /Library/StartupItems/MySQLCOM/MySQLCOM re=
+start</code>'.</li>
+</ul></li>
+</ol>
+<h2 id=3D"DatabaseSetupForMySQL-Step4.SetupyourMySQLdatabaseanduser">Step 4=
+. Set up your MySQL database and user</h2>
+<p>In this step you will create a database within MySQL to hold your Conflu=
+ence data, and a database user with authority to access that database.</p>
+<p><span style=3D"color: rgb(0,0,0);"><strong>To create the database and us=
+er privileges:</strong></span></p>
+<ol>
+<li>Run the '<code>mysql</code>' command as a MySQL super user. The default=
+ user is 'root' with a blank password.</li>
+<li><p>Create an empty Confluence database schema by running this command:<=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: sql; gutter: false" style=3D"font-s=
+ize:12px;">CREATE DATABASE confluence CHARACTER SET utf8 COLLATE utf8_bin;<=
+/pre>=20
+</div>
+</div></li>
+<li><p>Create the Confluence database user by running this command.&nbsp;Re=
+place 'confluenceuser' and 'confluencepass' with a username and password of=
+ your choice. If Confluence is not running on the same server as your MySQL=
+ database server, replace 'localhost' with the hostname or IP address of th=
+e Confluence server:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: sql; gutter: false" style=3D"font-s=
+ize:12px;">GRANT ALL PRIVILEGES ON confluence.* TO 'confluenceuser'@'localh=
+ost' IDENTIFIED BY 'confluencepass';</pre>=20
+</div>
+</div></li>
+</ol>
+<h2 id=3D"DatabaseSetupForMySQL-Step5.InstallConfluence">Step 5. Install Co=
+nfluence</h2>
+<p><span class=3D"confluence-link">Install Confluence</span> if you have no=
+t done so already. See the <a href=3D"/display/DOC/Confluence+Installation+=
+Guide">Confluence Installation Guide</a>. <strong>Stop immediately after th=
+e installation, before opening the Confluence Setup Wizard in your browser<=
+/strong>, and follow the steps below.</p>
+<p>If you have already got part-way through the Confluence Setup Wizard, st=
+op at the database setup step and follow the steps below. You will be able =
+to restart the setup wizard at the same step later.</p>
+<p><span class=3D"confluence-anchor-link" id=3D"DatabaseSetupForMySQL-drive=
+rdownload"></span></p>
+<h2 id=3D"DatabaseSetupForMySQL-Step6.DownloadandinstalltheMySQLdatabasedri=
+ver">Step 6. Download and install the MySQL database driver</h2>
+<p>If you are <strong>upgrading Confluence to a later version, and you are =
+already using the recommended MySQL driver</strong> (<span class=3D"externa=
+l-link">JDBC Connector/J 5.1</span>), you can skip the instructions in this=
+ section. The Confluence upgrade task will automatically copy over your exi=
+sting driver to the upgraded installation.</p>
+<p>If you are installing Confluence, or you are upgrading Confluence and no=
+t using the recommended MySQL driver (<span class=3D"external-link">JDBC Co=
+nnector/J 5.1</span>), follow the steps below.</p>
+<p>Choose whether you will set up a&nbsp;<strong>direct JDBC connection or =
+a datasource connection</strong> to MySQL, to suit your environment. If uns=
+ure, choose direct JDBC.</p>
+<p><strong>To set up a direct JDBC connection:<br /></strong></p>
+<p>If you plan to set up a direct JDBC connection to MySQL, you will need t=
+o copy the MySQL JDBC driver to your Confluence installation.</p>
+<ol>
+<li>Get the MySQL driver:<br />
+<ul>
+<li>If you are <strong>installing Confluence</strong>, download the recomme=
+nded MySQL driver<span class=3D"external-link">&nbsp;</span>. Links to the =
+appropriate database drivers are available on this page: <a href=3D"/displa=
+y/DOC/Database+JDBC+Drivers">Database JDBC Drivers</a>.<br />You can downlo=
+ad either the <code>.tar.gz</code> or the<code> .zip</code> archive. Extrac=
+t the driver JAR file (for example, <code>mysql-connector-java-x.x.x-bin.ja=
+r</code>, where <code>x.x.x</code> is a version number) from the archive.</=
+li>
+<li>If you are <strong>upgrading Confluence to a later version, </strong><s=
+trong>and you are not using the recommended MySQL driver</strong> (<span cl=
+ass=3D"external-link">JDBC Connector/J 5.1</span>), copy the driver JAR fil=
+e from your existing Confluence installation before you upgrade. The driver=
+ will be in the <code><span class=3D"confluence-link">&lt;Confluence instal=
+lation&gt;</span></code><code>/confluence/WEB-INF/lib</code> folder.</li>
+</ul></li>
+<li>Copy the driver JAR file to the&nbsp;<code><span class=3D"confluence-li=
+nk">&lt;Confluence installation&gt;</span></code><code><code>/confluence</c=
+ode>/WEB-INF/lib</code> folder in your new or upgraded Confluence installat=
+ion.</li>
+</ol>
+<p><strong>To set up a datasource connection:</strong></p>
+<p>If you plan to set up a datasource connection to MySQL, follow the steps=
+ described in <a href=3D"/display/DOC/Configuring+a+MySQL+Datasource+in+Apa=
+che+Tomcat">Configuring a MySQL Datasource in Apache Tomcat</a>.</p>
+<h2 id=3D"DatabaseSetupForMySQL-Step7.Checksettingsforinternationalisation"=
+>Step 7. Check settings for internationalisation</h2>
+<p>If you are using a existing database, use the <code><strong>status</stro=
+ng></code> command to verify database character encoding information. The r=
+esults should be UTF-8. See <a href=3D"/display/DOC/Configuring+Database+Ch=
+aracter+Encoding">Configuring Database Character Encoding</a>.</p>
+<h2 id=3D"DatabaseSetupForMySQL-Step8.SetupyourdatabaseconnectionintheConfl=
+uenceSetupWizard">Step 8. Set up your database connection in the Confluence=
+ Setup Wizard</h2>
+<p>Start Confluence, and go to the Confluence Setup Wizard in your browser.=
+ Follow these steps to set up the new configuration:</p>
+<ol>
+<li>Follow the initial steps in the&nbsp;<a href=3D"/display/DOC/Confluence=
++Setup+Guide">Confluence Setup Guide</a>.</li>
+<li>When prompted to choose an evaluation or production installation, choos=
+e <strong>production installation</strong>.</li>
+<li>When prompted to choose an embedded or external database, select <stron=
+g>MySQL</strong> from the dropdown list and choose <strong>External Databas=
+e</strong>.</li>
+<li style=3D"list-style-type: none;">Choose either the direct JDBC or the d=
+atasource connection, to suit the choice you made earlier when setting up t=
+he MySQL database driver.
+<ul>
+<li>For the JDBC connection: Enter the username (for example, <code>conflue=
+nceuser</code>) and password you chose earlier.&nbsp;</li>
+<li>For a datasource connection: Set the JNDI name to <code>java:comp/env/j=
+dbc/confluence</code></li>
+</ul></li>
+</ol>
+<p>Congratulations! Confluence is now using your MySQL database to store it=
+s data.</p>
+<h2 id=3D"DatabaseSetupForMySQL-Troubleshooting">Troubleshooting</h2>
+<ul>
+<li><p>If you get the following error message<code>,</code> verify that you=
+ have given the <code>confluenceuser</code> user all the required database =
+permissions when connecting from <code>localhost</code>.</p>
+<div class=3D"preformatted panel" style=3D"border-width: 1px;">
+<div class=3D"preformattedContent panelContent">=20
+<pre>Could not successfully test your database: : Server connection failure=
+ during transaction. Due to underlying exception: 'java.sql.SQLException: A=
+ccess denied for user 'confluenceuser'@'localhost' (using password: YES)'</=
+pre>=20
+</div>
+</div></li>
+<li class=3D"confluence-link">The following page contains common issues enc=
+ountered when setting up your MySQL database to work with Confluence: <a hr=
+ef=3D"/display/CONFKB/Known+Issues+for+MySQL">Known Issues for MySQL</a></l=
+i>
+<li>If Confluence complains that it is missing a class file, you may have p=
+laced the JDBC driver in the wrong folder.</li>
+<li>If none of the above describes your issue, please create a support tick=
+et at <a href=3D"http://support.atlassian.com" class=3D"external-link" rel=
+=3D"nofollow">http://support.atlassian.com</a> and be sure to include your =
+logs (found in <code>&lt;CONFLUENCE-INSTALLATION&gt;/logs</code> and <code>=
+&lt;<code>CONFLUENCE-HOME</code>&gt;/logs</code>).</li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_39195_415295498.1398537454859--

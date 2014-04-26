@@ -1,0 +1,576 @@
+Message-ID: <1335344920.39202.1398537942959.JavaMail.svc_confluence_prod@node209>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_39201_1620754324.1398537942957"
+
+------=_Part_39201_1620754324.1398537942957
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Important Directories and Files</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Important Directories and Files</h1>
+    <div class=3D"Section1">
+        <p><strong>On this page:</strong></p>=20
+<style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1398537942722 {padding: 0px;}
+div.rbtoc1398537942722 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1398537942722 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1398537942722">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ImportantDirectoriesandFiles-JIRAInstallationDirectory">JIR=
+A Installation Directory</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ImportantDirectoriesandFiles-ImportantFilesandDirectories">=
+Important Files and Directories</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ImportantDirectoriesandFiles-&lt;jira-application-dir&gt;/a=
+tlassian-jira/WEB-INF/classes/jira-application.properties">&lt;jira-applica=
+tion-dir&gt;/atlassian-jira/WEB-INF/classes/jira-application.properties</a>=
+</li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-&lt;jira-application-dir&gt;/a=
+tlassian-jira/WEB-INF/classes/jpm.xml">&lt;jira-application-dir&gt;/atlassi=
+an-jira/WEB-INF/classes/jpm.xml</a></li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-&lt;jira-application-dir&gt;/a=
+tlassian-jira/WEB-INF/lib/">&lt;jira-application-dir&gt;/atlassian-jira/WEB=
+-INF/lib/</a></li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-&lt;jira-application-dir&gt;/a=
+tlassian-jira/WEB-INF/classes/log4j.properties">&lt;jira-application-dir&gt=
+;/atlassian-jira/WEB-INF/classes/log4j.properties</a></li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-&lt;jira-application-dir&gt;/a=
+tlassian-jira/WEB-INF/classes/entityengine.xml">&lt;jira-application-dir&gt=
+;/atlassian-jira/WEB-INF/classes/entityengine.xml</a></li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-conf/server.xml">conf/server.x=
+ml</a></li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-MemorySettings">Memory Setting=
+s</a></li>=20
+</ul> </li>=20
+</ul> </li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-JIRAHomeDirectory">JIRA Home D=
+irectory</a></li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-ImportantFiles">Important File=
+s</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ImportantDirectoriesandFiles-dbconfig.xml">dbconfig.xml</a>=
+</li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-jira-config.properties">jira-c=
+onfig.properties</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-ImportantSubdirectories">Impor=
+tant Subdirectories</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ImportantDirectoriesandFiles-data">data</a></li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-export">export</a></li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-log">log</a></li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-plugins">plugins</a></li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-caches">caches</a></li>=20
+<li><a href=3D"#ImportantDirectoriesandFiles-tmp">tmp</a></li>=20
+</ul> </li>=20
+</ul>=20
+</div>=20
+<h2 id=3D"ImportantDirectoriesandFiles-JIRAInstallationDirectory">JIRA Inst=
+allation Directory</h2> The 'JIRA Installation Directory' is the directory =
+into which the JIRA application files and libraries have been extracted, ei=
+ther:
+<ul>
+<li>by the <a href=3D"/display/JIRA/Installing+JIRA+on+Windows">Windows</a>=
+ or <a href=3D"/display/JIRA/Installing+JIRA+on+Linux">Linux</a> installers=
+, or</li>
+<li>by extracting the contents of a <a href=3D"/display/JIRA/Installing+JIR=
+A+from+an+Archive+File+on+Windows%2C+Linux+or+Solaris">JIRA installation ar=
+chive</a> or <a href=3D"/display/JIRA/Installing+JIRA+WAR">WAR distribution=
+</a> archive file (i.e. a <code>.tar.gz</code> or <code>.zip</code> file).<=
+/li>
+</ul>
+<p>JIRA does not modify or store any data in this directory.</p>
+<h3 id=3D"ImportantDirectoriesandFiles-ImportantFilesandDirectories">Import=
+ant Files and Directories</h3>=20
+<div class=3D"aui-message hint shadowed information-macro">=20
+<span class=3D"aui-icon icon-hint">Icon</span>=20
+<div class=3D"message-content">=20
+<p>The directories/files described below are found under different sub-dire=
+ctories of the 'JIRA Installation Directory', depending on whether you have=
+ installed a 'recommended' or WAR distribution of JIRA. Please substitute t=
+he following directories for the <strong><code>&lt;jira-application-dir&gt;=
+</code></strong> placeholder (used throughout the rest of this section), as=
+ follows:</p>
+<ul>
+<li><strong>'Recommended' distributions</strong> =E2=80=94 the <code>atlass=
+ian-jira</code> subdirectory of the 'JIRA Installation Directory' installed=
+ using the '<a href=3D"/display/JIRA/Installing+JIRA+on+Windows">Windows In=
+staller</a>', '<a href=3D"/display/JIRA/Installing+JIRA+on+Linux">Linux Ins=
+taller</a>' or from an '<a href=3D"/display/JIRA/Installing+JIRA+from+an+Ar=
+chive+File+on+Windows%2C+Linux+or+Solaris">Archive File</a>'.</li>
+<li><p>The default installation directory on Linux is:</p><p><code>/opt/atl=
+assian/jira/</code></p></li>
+<li><strong>WAR distribution</strong> =E2=80=94 the <code>webapp</code> sub=
+directory of the 'JIRA Installation Directory'.<br /> <img class=3D"emotico=
+n emoticon-information" src=3D"6106287951041e6fefc6ef9c0a1d5eea" data-emoti=
+con-name=3D"information" alt=3D"(info)" width=3D"16" height=3D"16" /> <stro=
+ng>Please Note:</strong> To edit files in this <code>webapp</code> director=
+y, first copy them to the <code>edit-webapp</code> subdirectory (if they ar=
+e not already present in <code>edit-webapp</code>) and edit the copies in <=
+code>edit-webapp</code>. Refer to the 'Webapp Layout' section of the <a hre=
+f=3D"/display/JIRA/JIRA+WAR+Configuration+Overview">JIRA WAR Configuration =
+Overview</a> for details. Copies of the <code>jira-application.properties</=
+code> and <code>entityengine.xml</code> file are already available in the <=
+code>edit-webapp</code> sub-directory.</li>
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"sectionColumnWrapper">
+<div class=3D"sectionMacro">
+<div class=3D"sectionMacroRow">
+<div class=3D"columnMacro" style=3D"width:1%;min-width:1%;max-width:1%;">
+&nbsp;
+</div>
+<div class=3D"columnMacro" style=3D"width:99%;min-width:99%;max-width:99%;"=
+>
+<h4 id=3D"ImportantDirectoriesandFiles-&lt;jira-application-dir&gt;/atlassi=
+an-jira/WEB-INF/classes/jira-application.properties"><code>&lt;jira-applica=
+tion-dir&gt;/atlassian-jira/WEB-INF/classes/jira-application.properties</co=
+de></h4>
+<p>This file tells JIRA where to find the <a href=3D"/display/JIRA/JIRA+Hom=
+e+Directory">JIRA Home Directory</a>.<br /> <img class=3D"emoticon emoticon=
+-warning" src=3D"0e1fbfd791fc0c13ec1bc9640e680006" data-emoticon-name=3D"wa=
+rning" alt=3D"(warning)" width=3D"16" height=3D"16" /> Be aware that your J=
+IRA Home Directory defined in this file can be overridden. See <a href=3D"/=
+display/JIRA/Setting+your+JIRA+Home+Directory">Setting your JIRA Home Direc=
+tory</a> for more information.</p>
+<h4 id=3D"ImportantDirectoriesandFiles-&lt;jira-application-dir&gt;/atlassi=
+an-jira/WEB-INF/classes/jpm.xml"><code>&lt;jira-application-dir&gt;/<code>a=
+tlassian-jira/</code>WEB-INF/classes/jpm.xml</code></h4>
+<p>This file stores the default values for <a href=3D"/display/JIRA/Advance=
+d+JIRA+Configuration">JIRA's advanced configuration settings</a> and should=
+ not be modified. The default values of properties in this file are customi=
+zed (i.e. overridden) by redefining them in either the <code>jira-config.pr=
+operties</code> file (in your <a href=3D"/display/JIRA/JIRA+Home+Directory"=
+>JIRA Home Directory</a>) or the JIRA database (via the JIRA administration=
+ area). See <a href=3D"/display/JIRA/Advanced+JIRA+Configuration">Advanced =
+JIRA Configuration</a> for more information.</p>
+<h4 id=3D"ImportantDirectoriesandFiles-&lt;jira-application-dir&gt;/atlassi=
+an-jira/WEB-INF/lib/"><code>&lt;jira-application-dir&gt;/<code>atlassian-ji=
+ra/</code>WEB-INF/lib/</code></h4>
+<p>This is the directory where plugins built on Atlassian's Plugin Framewor=
+k 1 (i.e. 'Plugins 1' plugins) are stored. If you are <a href=3D"/display/J=
+IRA/Managing+Add-ons">installing a new 'Plugins 1' plugin</a>, you will nee=
+d to deploy it into this directory.<br /> 'Plugins 2' plugins should be sto=
+red in the <a href=3D"/display/JIRA/JIRA+Home+Directory">JIRA Home Director=
+y</a>.</p>
+<h4 id=3D"ImportantDirectoriesandFiles-&lt;jira-application-dir&gt;/atlassi=
+an-jira/WEB-INF/classes/log4j.properties"><code>&lt;jira-application-dir&gt=
+;/<code>atlassian-jira/</code>WEB-INF/classes/log4j.properties</code></h4>
+<p>JIRA's logging configuration file. See <a href=3D"/display/JIRA/Logging+=
+and+Profiling">Logging and Profiling</a>.</p>
+<p>The actual log files generated by JIRA can be found in the following loc=
+ations:</p>
+<ul>
+<li><strong>JIRA application log</strong> =E2=80=94 <code>bin/atlassian-jir=
+a.log</code></li>
+<li><strong>Application server log</strong> =E2=80=94 generally the applica=
+tion server log file can be found under the <code>logs</code> directory. Ho=
+wever, this can vary depending on the application server you are running. P=
+lease see <a href=3D"/pages/viewpage.action?pageId=3D16121981">Where are th=
+e application server logs?</a> for further details.</li>
+</ul>
+<h4 id=3D"ImportantDirectoriesandFiles-&lt;jira-application-dir&gt;/atlassi=
+an-jira/WEB-INF/classes/entityengine.xml"><code>&lt;jira-application-dir&gt=
+;/<code>atlassian-jira/</code>WEB-INF/classes/entityengine.xml</code></h4>
+<p>This file configures the OFBiz Entity Engine which JIRA uses to store pe=
+rsist data in a datasource. See <a href=3D"/display/JIRA/Configuring+the+En=
+tity+Engine+for+JIRA">Configuring the Entity Engine for JIRA</a>.</p>
+</div>
+</div>
+</div>
+</div>=20
+<div class=3D"aui-message hint shadowed information-macro">=20
+<span class=3D"aui-icon icon-hint">Icon</span>=20
+<div class=3D"message-content">=20
+<p>The sub-directories/files described below are found under the root of th=
+e JIRA Installation directory.</p>=20
+</div>=20
+</div>=20
+<div class=3D"sectionColumnWrapper">
+<div class=3D"sectionMacro">
+<div class=3D"sectionMacroRow">
+<div class=3D"columnMacro" style=3D"width:1%;min-width:1%;max-width:1%;">
+&nbsp;
+</div>
+<div class=3D"columnMacro" style=3D"width:99%;min-width:99%;max-width:99%;"=
+>
+<h4 id=3D"ImportantDirectoriesandFiles-conf/server.xml"><code>conf/server.x=
+ml</code></h4>
+<p>This file is used for JIRA SSL configuration. See <a href=3D"/display/JI=
+RA/Running+JIRA+over+SSL+or+HTTPS">Running JIRA over SSL or HTTPS</a>.</p>
+<h4 id=3D"ImportantDirectoriesandFiles-MemorySettings">Memory Settings</h4>
+<p>The file used to edit JAVA_OPTS memory settings will depend on the metho=
+d used to install JIRA, as well as the operating system used for your insta=
+llation.</p>
+<p>For example, if you are running JIRA on Tomcat in Windows (manual startu=
+p), you would update the following file:<br /> <code>bin\setenv.bat</code><=
+br /> whereas for JIRA on Tomcat in Linux/Unix, you would update this file:=
+<br /> <code>bin/setenv.sh</code></p>
+<p>See <a href=3D"/display/JIRA/Increasing+JIRA+Memory">Increasing JIRA Mem=
+ory</a> for further details.</p>
+</div>
+</div>
+</div>
+</div>=20
+<h2 id=3D"ImportantDirectoriesandFiles-JIRAHomeDirectory">JIRA Home Directo=
+ry</h2> The 'JIRA Home Directory' contains key data that help define how JI=
+RA works. This document outlines the purpose of the various files and subdi=
+rectories within the JIRA Home Directory.
+<p>If JIRA was installed using the automated <a href=3D"/display/JIRA/Insta=
+lling+JIRA+on+Windows">Windows</a> or <a href=3D"/display/JIRA/Installing+J=
+IRA+on+Linux">Linux</a> installers, the default location of the JIRA Home D=
+irectory is:</p>
+<ul>
+<li><code>C:\Program Files\Atlassian\Application Data\JIRA</code> (on Windo=
+ws) or</li>
+<li><code>/var/atlassian/application-data/jira</code> (on Linux)</li>
+</ul>
+<p>If you <a href=3D"/display/JIRA/Installing+JIRA+from+an+Archive+File+on+=
+Windows%2C+Linux+or+Solaris">install JIRA from an archive file</a>, the JIR=
+A Home Directory can be any suitable location that is accessible by your JI=
+RA installation. Typical example locations might be:</p>
+<ul>
+<li><code>C:\jira\home</code> (on Windows) or</li>
+<li><code>/var/jira-home</code> (on Linux or Solaris)</li>
+</ul>
+<p><img class=3D"emoticon emoticon-warning" src=3D"0e1fbfd791fc0c13ec1bc964=
+0e680006" data-emoticon-name=3D"warning" alt=3D"(warning)" width=3D"16" hei=
+ght=3D"16" /> However, avoid locating the JIRA Home Directory inside the <a=
+ href=3D"/display/JIRA/JIRA+Installation+Directory">JIRA Installation Direc=
+tory</a>.</p>
+<p><img class=3D"emoticon emoticon-tick" src=3D"0a3e9410b11b3d613f2a3000c5c=
+ae84e" data-emoticon-name=3D"tick" alt=3D"(tick)" width=3D"16" height=3D"16=
+" /> For information on specifying the location of the JIRA Home Directory,=
+ please see <a href=3D"/display/JIRA/Setting+your+JIRA+Home+Directory">Sett=
+ing your JIRA Home Directory</a>.</p>
+<h2 id=3D"ImportantDirectoriesandFiles-ImportantFiles">Important Files</h2>
+<h4 id=3D"ImportantDirectoriesandFiles-dbconfig.xml"><code>dbconfig.xml</co=
+de></h4>
+<p>This file (located at the root of your JIRA Home Directory) defines all =
+details for JIRA's database connection. This file is typically created by r=
+unning the <a href=3D"/display/JIRA/Running+the+Setup+Wizard">JIRA Setup Wi=
+zard</a> on new installations of JIRA or by configuring a database connecti=
+on using the <a href=3D"/display/JIRA/Using+the+JIRA+Configuration+Tool">JI=
+RA Configuration Tool</a>.</p>
+<p>You can also create your own <code>dbconfig.xml</code> file. This is use=
+ful if you need to specify additional parameters for your specific database=
+ configuration, which are not generated by the Setup Wizard or JIRA Configu=
+ration Tool. For more information, refer to the 'manual' connection instruc=
+tions of the appropriate database configuration guide in the <a href=3D"/di=
+splay/JIRA/Connecting+JIRA+to+a+Database">Connecting JIRA to a Database</a>=
+ section.</p>
+<h4 id=3D"ImportantDirectoriesandFiles-jira-config.properties"><code>jira-c=
+onfig.properties</code></h4>
+<p>This file (also located at the root of your JIRA Home Directory) stores =
+custom values for most of <a href=3D"/display/JIRA/Advanced+JIRA+Configurat=
+ion">JIRA's advanced configuration settings</a>. Properties defined in this=
+ file override the default values defined in the <code>jpm.xml</code> file =
+(located in your <a href=3D"/display/JIRA/JIRA+Installation+Directory">JIRA=
+ Installation Directory</a>). See <a href=3D"/display/JIRA/Advanced+JIRA+Co=
+nfiguration">Advanced JIRA Configuration</a> for more information.</p>
+<p><img class=3D"emoticon emoticon-information" src=3D"6106287951041e6fefc6=
+ef9c0a1d5eea" data-emoticon-name=3D"information" alt=3D"(info)" width=3D"16=
+" height=3D"16" /> In new JIRA installations, this file may not initially e=
+xist and if so, will need to be created manually. See<span>&nbsp;</span><sp=
+an>&nbsp;</span><span><a href=3D"/display/JIRA/Advanced+JIRA+Configuration"=
+>Making changes to the&nbsp;<code>jira-config.properties</code> file</a></s=
+pan> for more information. This file is typically present in JIRA installat=
+ions upgraded from version 4.3 or earlier, whose <a href=3D"/display/JIRA04=
+3/Advanced+JIRA+configuration+with+jira-application.properties">advanced co=
+nfiguration options</a> had been customized (from their default values).</p=
+>
+<h2 id=3D"ImportantDirectoriesandFiles-ImportantSubdirectories">Important S=
+ubdirectories</h2>
+<h4 id=3D"ImportantDirectoriesandFiles-data"><code>data</code></h4>
+<p>This directory contains application data for your JIRA instance, includi=
+ng <a href=3D"/display/JIRA/Configuring+File+Attachments">attachments</a> (=
+for every version of each attachment stored in JIRA).</p>
+<h4 id=3D"ImportantDirectoriesandFiles-export"><code>export</code></h4>
+<p>JIRA will place its <a href=3D"/display/JIRA/Automating+JIRA+Backups">au=
+tomated backup archives</a> into this directory.</p>
+<h4 id=3D"ImportantDirectoriesandFiles-log"><code>log</code></h4>
+<p>JIRA will place its logs into this directory. (Note: if the JIRA home di=
+rectory is not configured, then the logs will be placed into the current wo=
+rking directory instead).</p>
+<p>The logs will only start showing up once the first log message is writte=
+n to them. For example, the internal access log will not be created util JI=
+RA starts writing to it.</p>
+<p>You can change the location of the log file using <code>log4j.properties=
+</code> as described in the documentation on <a href=3D"/display/JIRA/Loggi=
+ng+and+Profiling">Logging and Profiling</a>.</p>
+<h4 id=3D"ImportantDirectoriesandFiles-plugins"><code>plugins</code></h4>
+<p>This is the directory where plugins built on <a href=3D"https://develope=
+r.atlassian.com/display/PLUGINFRAMEWORK/Converting+a+Plugin+to+Plugin+Frame=
+work+2" class=3D"external-link" rel=3D"nofollow">Atlassian's Plugin Framewo=
+rk 2</a> (i.e. 'Plugins 2' plugins) are stored. If you are <a href=3D"/disp=
+lay/JIRA/Managing+Add-ons">installing a new 'Plugins 2' plugin</a>, you wil=
+l need to deploy it into this directory under the <code>installed-plugins</=
+code> sub-directory.</p>
+<p>'Plugins 1' plugins should be stored in the <a href=3D"/display/JIRA/JIR=
+A+Installation+Directory">JIRA Installation Directory</a>.</p>
+<p>This directory is created on JIRA startup, if it does not exist already.=
+</p>
+<h4 id=3D"ImportantDirectoriesandFiles-caches"><code>caches</code></h4>
+<p>This is where JIRA stores caches including:</p>
+<ul>
+<li>Lucene indexes - see <a href=3D"/display/JIRAKB/Searching%2C+Indexing%2=
+C+and+Filters+Troubleshooting">Searching, Indexing, and Filters Troubleshoo=
+ting</a></li>
+<li>OSGi framework caches</li>
+</ul>
+<p>These files are vital for JIRA performance and should not be modified or=
+ removed externally while JIRA is running.</p>
+<p>See <a href=3D"/display/JIRA/Search+Indexing">Search Indexing</a> for fu=
+rther details.</p>
+<h4 id=3D"ImportantDirectoriesandFiles-tmp"><code>tmp</code></h4>
+<p>Any temporary content created for various runtime functions such as expo=
+rting, importing, file upload and indexing is stored under this directory.<=
+/p>
+<p>You can remove files from this directory while JIRA is running, but we r=
+ecommend that you shut down JIRA first before altering the contents of this=
+ directory.</p>
+    </div>
+</body>
+</html>
+------=_Part_39201_1620754324.1398537942957
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/0e1fbfd791fc0c13ec1bc9640e680006
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAA3NCSVQICAjb4U/gAAAAY1BMVEX/
+///ht0zds0vds0vds0vds0vds0vds0vbsUrZr0rZr0rZr0rXrUr/01H90VH7z1D5zVD3y0/1yk/z
+x0/wxE7swU7rwE3pvk3nvE3nu0zlukzjuUzftUvds0vZr0rXrUqBWzo+M1gKAAAAIXRSTlMAESJE
+VWZ3maq7zO7u//////////////////////////9zCPjNAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+HHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABR0RVh0Q3JlYXRpb24gVGlt
+ZQA2LzEvMTM4qUXQAAAAe0lEQVQYlV2N2RaDIAwFo6LWNhdsrV1wif//lUUownHeMmeSEHkqZkUZ
+BVvLZSZaMVi6NJf8BB6SlroFjul2BDJg29BL8xfXGbvAlws/K7kHoaUNwYQgMPqklj4Kve4JWxy8
+XNKsBrGAcYm/EAXe7H7qtGI+Qool50Jnfgc2C3zDPO17AAAAAElFTkSuQmCC
+------=_Part_39201_1620754324.1398537942957
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/0a3e9410b11b3d613f2a3000c5cae84e
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjklEQVQ4EWNkQAPcpkJp7Kp8Ltx6
+gqHIUl8vvV/98/anPV9Pv5uFLM4I4zByMAmKpajsZpPhNoaJYaN/Pfl69tWcO67/f/x7D5IHGwDS
+LFmmfZeZi0UQmyZ0sb/f/rx/3nVVGWQIE0gSZDOxmkHqQWpBesBskJ95LETTQBx8gIedh4GNhY3h
+199fYGXMfGxSfz/+es7M7ynVwSrMroRPs7qYGsPCkAlADzMznH92CaGUlYmTiRMY4ggRBgaQTcgA
+pHlD9DwGDVFVhjjDYGQpBpBecBggi8YYhjJ0ezWAhQJ1fBh2J65g4GbjYrjy8jqD/awAZKVgNgu6
+SKF1KgMnCwdYOFzXD0wvvbieoXJHM7pSMB/DBeuubkfRXLe3B6dmkEJmNnluG+RA3HvnEMPNt/cY
+bBUsGAq21jGsvrQRbCA24jswZTKColEoWH4mNgWExN6tfZjOBErboORJSDG6PEgPSC84DEBpG5Q8
+0RXh4oPUgvSA5MEGgNI0KG0T4xKQGlg+ABkAz40gDgiQmp0BQ16bzd1IdeoAAAAASUVORK5CYII=
+
+------=_Part_39201_1620754324.1398537942957
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/6106287951041e6fefc6ef9c0a1d5eea
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAG1BMVEX/
+//87c687c687c687c687c687c6////87c68225wXAAAACXRSTlMAEWaqu8zu///VQmatAAAACXBI
+WXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAA
+ABR0RVh0Q3JlYXRpb24gVGltZQA2LzEvMTM4qUXQAAAARklEQVQImWNgYFDu6DBiAALRDiAIZGBg
+zAAx2gQYWDvAIIBBo6OjvaKjo4nBA8JoYeiAAhADJIKNAVcM1w43EG4F3FKYMwD5VTVUBOW+rQAA
+AABJRU5ErkJggg==
+------=_Part_39201_1620754324.1398537942957--

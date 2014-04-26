@@ -1,0 +1,559 @@
+Message-ID: <758781327.39154.1398536628631.JavaMail.svc_confluence_prod@node209>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_39153_1948278376.1398536628629"
+
+------=_Part_39153_1948278376.1398536628629
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Installing JIRA from an Archive File on Windows, Linux or Solari=
+s</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Installing JIRA from an Archive File on Windows, Linux or Solaris</=
+h1>
+    <div class=3D"Section1">
+        <div class=3D"sectionColumnWrapper">
+<div class=3D"sectionMacro">
+<div class=3D"sectionMacroRow">
+<div class=3D"columnMacro">
+<p>To install JIRA on Windows from a 'zip' archive file or Linux/Solaris fr=
+om a 'tar.gz' archive file, follow the instructions on this page.</p>
+<h2 id=3D"InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-Beforeyou=
+begin">Before you begin</h2>
+<p>Please ensure that you have <a href=3D"/display/JIRA/Installing+Java">in=
+stalled Java and set JAVA_HOME</a>. Also refer to the <a href=3D"/display/J=
+IRA/Supported+Platforms">Supported Platforms</a> page for details about whi=
+ch Java (as well as other) platforms are supported by JIRA.</p>
+<p><img class=3D"emoticon emoticon-warning" src=3D"0e1fbfd791fc0c13ec1bc964=
+0e680006" data-emoticon-name=3D"warning" alt=3D"(warning)" width=3D"16" hei=
+ght=3D"16" /> Linux distributions frequently have an open-source implementa=
+tion of Java called GCJ installed. Do not use this Java platform =E2=80=94 =
+it is incomplete and JIRA will not run successfully on it.</p>
+</div>
+<div class=3D"columnMacro" style=3D"width:320px;min-width:320px;max-width:3=
+20px;">
+<div class=3D"panel" style=3D"border-width: 1px;">
+<div class=3D"panelContent">=20
+<p><strong>On this page:</strong></p>
+<p><style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1398536628426 {padding: 0px;}
+div.rbtoc1398536628426 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1398536628426 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1398536628426">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-Bef=
+oreyoubegin">Before you begin</a></li>=20
+<li><a href=3D"#InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-1.D=
+ownloadandExtracttheJIRAArchiveFile">1. Download and Extract the JIRA Archi=
+ve File</a></li>=20
+<li><a href=3D"#InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-2.S=
+ettheJIRAHomeDirectoryinJIRA">2. Set the JIRA Home Directory in JIRA</a></l=
+i>=20
+<li><a href=3D"#InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-3.C=
+reateaDedicatedUserAccountontheOperatingSystemtoRunJIRA">3. Create a Dedica=
+ted User Account on the Operating System to Run JIRA</a></li>=20
+<li><a href=3D"#InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-4.S=
+tartJIRA">4. Start JIRA</a></li>=20
+<li><a href=3D"#InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-5.R=
+untheSetupWizard">5. Run the Setup Wizard</a></li>=20
+<li><a href=3D"#InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-Nex=
+tSteps">Next Steps</a></li>=20
+</ul>=20
+</div>
+<p></p>=20
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><span class=3D"confluence-anchor-link" id=3D"InstallingJIRAfromanArchive=
+FileonWindows,LinuxorSolaris-downloadandextractjira"></span></p>
+<h2 id=3D"InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-1.Downloa=
+dandExtracttheJIRAArchiveFile">1. Download and Extract the JIRA Archive Fil=
+e</h2>
+<ol>
+<li>Download the appropriate JIRA archive file for your operating system ('=
+zip' for Windows or 'tar.gz' for Linux/Solaris), from the <a href=3D"http:/=
+/www.atlassian.com/software/jira/download" class=3D"external-link" rel=3D"n=
+ofollow">JIRA Download</a> page.<br /> <img class=3D"emoticon emoticon-info=
+rmation" src=3D"6106287951041e6fefc6ef9c0a1d5eea" data-emoticon-name=3D"inf=
+ormation" alt=3D"(info)" width=3D"16" height=3D"16" /> After selecting the =
+appropriate operating system tab on the 'JIRA download' page, you may need =
+to click the '<strong>Show all</strong>' link to access the required instal=
+lation package.</li>
+<li>Extract the downloaded file.<br /> <img class=3D"emoticon emoticon-info=
+rmation" src=3D"6106287951041e6fefc6ef9c0a1d5eea" data-emoticon-name=3D"inf=
+ormation" alt=3D"(info)" width=3D"16" height=3D"16" /> On Windows, we recom=
+mend using a file extraction tool such as <a href=3D"http://www.7-zip.org/"=
+ class=3D"external-link" rel=3D"nofollow">7-Zip</a>.<br /><img class=3D"emo=
+ticon emoticon-warning" src=3D"0e1fbfd791fc0c13ec1bc9640e680006" data-emoti=
+con-name=3D"warning" alt=3D"(warning)" width=3D"16" height=3D"16" />&nbsp;O=
+n Solaris, <strong>avoid using the Solaris' default tar utility!</strong> P=
+lease use <strong>GNU tar</strong> on this operating system to extract JIRA=
+, as GNU tar handles long filenames better.</li>
+</ol>
+<h2 id=3D"InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-2.SettheJ=
+IRAHomeDirectoryinJIRA">2. Set the JIRA Home Directory in JIRA</h2>
+<p>To set this, do one of the following:</p>
+<ul>
+<li>Edit the <code>jira-application.properties</code> file and set the valu=
+e of the '<code>jira.home</code>' property to the desired location for your=
+ <a href=3D"/display/JIRA/JIRA+Home+Directory">JIRA Home Directory</a> (thi=
+s location should be something different than the application directory, or=
+ you may run into problems later). If you are specifying this location's pa=
+th on Windows, use double back-slashes (&quot;\&quot;) between subdirectori=
+es. For example, <code>X:\\path\\to\\JIRA\=E2=80=8C\Home</code>.<br /><img =
+class=3D"emoticon emoticon-information" src=3D"6106287951041e6fefc6ef9c0a1d=
+5eea" data-emoticon-name=3D"information" alt=3D"(info)" width=3D"16" height=
+=3D"16" />If you define an UNC path in Microsoft Windows, be sure to double=
+ escape the leading backslash: <code>\\\\machinename\\path\\to\\JIRA\\home<=
+/code><br /> <img class=3D"emoticon emoticon-information" src=3D"6106287951=
+041e6fefc6ef9c0a1d5eea" data-emoticon-name=3D"information" alt=3D"(info)" w=
+idth=3D"16" height=3D"16" /> See the <a href=3D"/display/JIRA/JIRA+Installa=
+tion+Directory">JIRA Installation Directory</a> page to find where this fil=
+e is located.</li>
+<li>Set an environment variable named <code>JIRA_HOME</code> in your operat=
+ing system whose value is the location of your <a href=3D"/display/JIRA/JIR=
+A+Home+Directory">JIRA Home Directory</a>. To do this:
+<ul>
+<li>On Windows, do one of the following:<br />
+<ul>
+<li>Configure this environment variable through the Windows user interface =
+(typically through 'My Computer' or 'Computer')</li>
+<li>At the command prompt, enter the following command (with your own JIRA =
+Home path) before running JIRA from the command prompt:<br />
+<ul>
+<li><code>set JIRA_HOME=3DX:\path\to\JIRA\Home</code><br /><img class=3D"em=
+oticon emoticon-warning" src=3D"0e1fbfd791fc0c13ec1bc9640e680006" data-emot=
+icon-name=3D"warning" alt=3D"(warning)" width=3D"16" height=3D"16" /> Pleas=
+e set your <code>JIRA_HOME</code>&nbsp; environment variable value using th=
+is format, where:<br />
+<ul>
+<li><code>X</code> is the drive letter where your JIRA Home Directory is lo=
+cated and</li>
+<li>no spacing has been added around the equal sign ('<code>=3D</code>')</l=
+i>
+</ul></li>
+</ul></li>
+<li>Specify the command above in a batch file used to start JIRA.</li>
+</ul></li>
+<li>On Linux/Solaris, do one of the following:<br />
+<ul>
+<li>Enter the following command at a shell/console prompt (with your own JI=
+RA Home path) before running JIRA:<br />
+<ul>
+<li><code>export JIRA_HOME=3D/path/to/jira/home</code></li>
+</ul></li>
+<li>Specify the command above in a script used to start JIRA.</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>You can specify any location on a disk for your JIRA home directory. Ple=
+ase be sure to specify an absolute path.</p>
+<p>Please note that you cannot use the same JIRA home directory for multipl=
+e instances of JIRA. We recommend locating your JIRA Home Directory complet=
+ely independently of the <a href=3D"/display/JIRA/JIRA+Installation+Directo=
+ry">JIRA Installation Directory</a> (i.e. not nesting one within the other)=
+ as this will minimise information being lost during major operations (e.g.=
+ backing up and restoring instances).</p>
+<p></p>
+<p><span class=3D"confluence-anchor-link" id=3D"InstallingJIRAfromanArchive=
+FileonWindows,LinuxorSolaris-creating_a_dedicated_user_account"></span></p>
+<h2 id=3D"InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-3.Createa=
+DedicatedUserAccountontheOperatingSystemtoRunJIRA">3. Create a Dedicated Us=
+er Account on the Operating System to Run JIRA</h2>
+<p><img class=3D"emoticon emoticon-information" src=3D"6106287951041e6fefc6=
+ef9c0a1d5eea" data-emoticon-name=3D"information" alt=3D"(info)" width=3D"16=
+" height=3D"16" /> This step is optional if you are evaluating JIRA but sho=
+uld be mandatory for JIRA installations used in production.</p>
+<p>A dedicated user should be created to run JIRA, as JIRA runs as the user=
+ it is invoked under and therefore can potentially be abused. For example: =
+</p>
+<ul>=20
+<li>If your operating system is *nix-based (for example, Linux or Solaris),=
+ type the following in a console:<br /> <code>$ sudo /usr/sbin/useradd --cr=
+eate-home --comment &quot;Account for running JIRA&quot; --shell /bin/bash =
+jira</code></li>=20
+</ul>=20
+<ul>=20
+<li>If your operating system is Windows:=20
+<ol>=20
+<li>Create the dedicated user account by either:=20
+<ul>=20
+<li>Typing the following at the Windows command line:<br /> <code>&gt; net =
+user jira mypassword /add /comment:&quot;Account for running JIRA&quot;</co=
+de><br /> (This creates a user account with user name 'jira' and password '=
+mypassword'. You should choose your own password.)</li>=20
+<li>Opening the Windows 'Computer Management' console to add your 'jira' us=
+er with its own password.</li>=20
+</ul> </li>=20
+<li><em>(Optional)</em> Use the Windows 'Computer Management' console to re=
+move the 'jira' user's membership of all unnecessary Windows groups, such a=
+s the default 'Users' group.<br /> <img class=3D"emoticon emoticon-tick" sr=
+c=3D"0a3e9410b11b3d613f2a3000c5cae84e" data-emoticon-name=3D"tick" alt=3D"(=
+tick)" width=3D"16" height=3D"16" /> If Windows is operating under a Micros=
+oft Active Directory, ask your Active Directory administrator to create you=
+r 'jira' account (with no prior privileges).</li>=20
+</ol> </li>=20
+</ul>=20
+<p>Ensure that <em>only the following directories</em> can be written to by=
+ this dedicated user account (e.g. 'jira'):</p>=20
+<ul>
+<li>The following subdirectories of your <a href=3D"/display/JIRA/JIRA+Inst=
+allation+Directory">JIRA Installation Directory</a> for '<a href=3D"/displa=
+y/JIRA/Installing+JIRA">recommended</a>' JIRA distributions (or for <a href=
+=3D"/display/JIRA/Installing+JIRA+WAR">JIRA WAR</a> distributions, the inst=
+allation directory of the Apache Tomcat application running JIRA):<br />
+<ul>
+<li><code>logs</code></li>
+<li><code>temp</code></li>
+<li><code>work</code></li>
+</ul></li>
+<li>Your <a href=3D"/display/JIRA/JIRA+Home+Directory">JIRA Home Directory<=
+/a>.</li>
+</ul>=20
+<p><img class=3D"emoticon emoticon-warning" src=3D"0e1fbfd791fc0c13ec1bc964=
+0e680006" data-emoticon-name=3D"warning" alt=3D"(warning)" width=3D"16" hei=
+ght=3D"16" /> Do not make the <a href=3D"/display/JIRA/JIRA+Installation+Di=
+rectory">JIRA Installation Directory</a> itself writeable by the dedicated =
+user account.</p>=20
+<p><img class=3D"emoticon emoticon-information" src=3D"6106287951041e6fefc6=
+ef9c0a1d5eea" data-emoticon-name=3D"information" alt=3D"(info)" width=3D"16=
+" height=3D"16" /> See also <a href=3D"/display/JIRA/Tomcat+security+best+p=
+ractices">Tomcat security best practices</a>.</p>
+<p></p>
+<p><span class=3D"confluence-anchor-link" id=3D"InstallingJIRAfromanArchive=
+FileonWindows,LinuxorSolaris-starting_JIRA"></span></p>
+<h2 id=3D"InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-4.StartJI=
+RA">4. Start JIRA</h2>
+<p>Enter the <code>bin</code> subdirectory of your JIRA installation direct=
+ory and execute the appropriate file to start running JIRA:</p>
+<ul>
+<li><code>start-jira.sh</code> (on Linux/Solaris)</li>
+<li><code>start-jira.bat</code> (on Windows)</li>
+</ul>
+<p><img class=3D"emoticon emoticon-information" src=3D"6106287951041e6fefc6=
+ef9c0a1d5eea" data-emoticon-name=3D"information" alt=3D"(info)" width=3D"16=
+" height=3D"16" /> To run JIRA as the dedicated user account (e.g. 'jira') =
+created <a href=3D"#InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris=
+-creating_a_dedicated_user_account">above</a>:</p>
+<ul>
+<li><strong>On Windows</strong>, use the <code>runas</code> command to run =
+<code>start-jira.bat</code>. For example,<br /> <code>runas /env /user:&lt;=
+DOMAIN&gt;\jira start-jira.bat</code><br /> (where <code>&lt;DOMAIN&gt;</co=
+de> is your Windows domain or computer name.)</li>
+<li><strong>On Linux</strong>, switch to the 'jira' account using the <code=
+>su</code> command before running <code>start-jira.sh</code> (or use <code>=
+su</code> to run <code>start-jira.sh</code> as the 'jira' account).</li>
+</ul>
+<p>Wait until the following message appears in the application's <a href=3D=
+"http://confluence.atlassian.com/pages/viewpage.action?pageId=3D16121981" c=
+lass=3D"external-link" rel=3D"nofollow">log file</a>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">*******************************************************
+ ... You can now access JIRA through your web browser.
+*******************************************************
+</pre>=20
+</div>
+</div>
+<p>You can access JIRA from any computer with network access to your JIRA s=
+erver by opening a <a href=3D"/display/JIRA/Supported+Platforms">supported =
+web browser</a> on the computer and visiting this URL:</p>
+<ul>
+<li><code>http://&lt;computer_name_or_IP_address&gt;:&lt;HTTP_port_number&g=
+t;</code></li>
+</ul>
+<p>where:</p>
+<ul>
+<li><code>&lt;computer_name_or_IP_address&gt;</code> is the name or IP addr=
+ess of the computer on which JIRA is installed and</li>
+<li><code>&lt;HTTP_port_number&gt;</code> is the HTTP port number (8080 by =
+default).</li>
+</ul>
+<p><img class=3D"emoticon emoticon-information" src=3D"6106287951041e6fefc6=
+ef9c0a1d5eea" data-emoticon-name=3D"information" alt=3D"(info)" width=3D"16=
+" height=3D"16" /> If JIRA does not appear in your web browser, you may nee=
+d to <a href=3D"/display/JIRA/Changing+JIRA%27s+TCP+Ports">change the port =
+that JIRA runs on</a>.</p>
+<p><img class=3D"emoticon emoticon-information" src=3D"6106287951041e6fefc6=
+ef9c0a1d5eea" data-emoticon-name=3D"information" alt=3D"(info)" width=3D"16=
+" height=3D"16" /> Logs will be written to <code>logs/catalina.out</code>.<=
+/p>=20
+<div class=3D"aui-message hint shadowed information-macro">=20
+<span class=3D"aui-icon icon-hint">Icon</span>=20
+<div class=3D"message-content">=20
+<p>If something goes wrong, please <a href=3D"/display/JIRA/Installing+Java=
+#InstallingJava-verify_java">verify that Java is installed correctly</a>. I=
+f the problem persists, please <a href=3D"http://www.atlassian.com/about/co=
+ntactform.jsp" class=3D"external-link" rel=3D"nofollow">contact us</a> =E2=
+=80=94 we're happy to help.</p>=20
+</div>=20
+</div>=20
+<h2 id=3D"InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-5.RuntheS=
+etupWizard">5. Run the Setup Wizard</h2>
+<p>See <a href=3D"/display/JIRA/Running+the+Setup+Wizard">Running the Setup=
+ Wizard</a>.</p>
+<p><span class=3D"confluence-anchor-link" id=3D"InstallingJIRAfromanArchive=
+FileonWindows,LinuxorSolaris-next_steps"></span></p>
+<h2 id=3D"InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-NextSteps=
+">Next Steps</h2>
+<ul>
+<li>See <a href=3D"/display/JIRA/JIRA+101">JIRA 101</a> to start creating P=
+rojects, creating Users, and customizing your JIRA instance.</li>
+<li>If you like to set up JIRA to start automatically every time you restar=
+t your computer, please see <a href=3D"/display/JIRA/Starting+JIRA+Automati=
+cally+on+Linux">Starting JIRA Automatically on Linux</a> or <a href=3D"/dis=
+play/JIRA/Running+JIRA+as+a+Service">Running JIRA as a Service</a> (for Win=
+dows).</li>
+<li>By default, JIRA installed from an archive uses the standard Tomcat por=
+t (i.e. 8080). If you need another application to run on that port, either =
+now or in the future, please see <a href=3D"/display/JIRA/Changing+JIRA%27s=
++TCP+Ports">Changing JIRA's TCP Ports</a>.</li>
+<li>To get the most out of JIRA, please see <a href=3D"/display/JIRA/Optimi=
+zing+Performance">Optimizing Performance</a>.</li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_39153_1948278376.1398536628629
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/0e1fbfd791fc0c13ec1bc9640e680006
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAA3NCSVQICAjb4U/gAAAAY1BMVEX/
+///ht0zds0vds0vds0vds0vds0vds0vbsUrZr0rZr0rZr0rXrUr/01H90VH7z1D5zVD3y0/1yk/z
+x0/wxE7swU7rwE3pvk3nvE3nu0zlukzjuUzftUvds0vZr0rXrUqBWzo+M1gKAAAAIXRSTlMAESJE
+VWZ3maq7zO7u//////////////////////////9zCPjNAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+HHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABR0RVh0Q3JlYXRpb24gVGlt
+ZQA2LzEvMTM4qUXQAAAAe0lEQVQYlV2N2RaDIAwFo6LWNhdsrV1wif//lUUownHeMmeSEHkqZkUZ
+BVvLZSZaMVi6NJf8BB6SlroFjul2BDJg29BL8xfXGbvAlws/K7kHoaUNwYQgMPqklj4Kve4JWxy8
+XNKsBrGAcYm/EAXe7H7qtGI+Qool50Jnfgc2C3zDPO17AAAAAElFTkSuQmCC
+------=_Part_39153_1948278376.1398536628629
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/0a3e9410b11b3d613f2a3000c5cae84e
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjklEQVQ4EWNkQAPcpkJp7Kp8Ltx6
+gqHIUl8vvV/98/anPV9Pv5uFLM4I4zByMAmKpajsZpPhNoaJYaN/Pfl69tWcO67/f/x7D5IHGwDS
+LFmmfZeZi0UQmyZ0sb/f/rx/3nVVGWQIE0gSZDOxmkHqQWpBesBskJ95LETTQBx8gIedh4GNhY3h
+199fYGXMfGxSfz/+es7M7ynVwSrMroRPs7qYGsPCkAlADzMznH92CaGUlYmTiRMY4ggRBgaQTcgA
+pHlD9DwGDVFVhjjDYGQpBpBecBggi8YYhjJ0ezWAhQJ1fBh2J65g4GbjYrjy8jqD/awAZKVgNgu6
+SKF1KgMnCwdYOFzXD0wvvbieoXJHM7pSMB/DBeuubkfRXLe3B6dmkEJmNnluG+RA3HvnEMPNt/cY
+bBUsGAq21jGsvrQRbCA24jswZTKColEoWH4mNgWExN6tfZjOBErboORJSDG6PEgPSC84DEBpG5Q8
+0RXh4oPUgvSA5MEGgNI0KG0T4xKQGlg+ABkAz40gDgiQmp0BQ16bzd1IdeoAAAAASUVORK5CYII=
+
+------=_Part_39153_1948278376.1398536628629
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/6106287951041e6fefc6ef9c0a1d5eea
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAG1BMVEX/
+//87c687c687c687c687c687c6////87c68225wXAAAACXRSTlMAEWaqu8zu///VQmatAAAACXBI
+WXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAA
+ABR0RVh0Q3JlYXRpb24gVGltZQA2LzEvMTM4qUXQAAAARklEQVQImWNgYFDu6DBiAALRDiAIZGBg
+zAAx2gQYWDvAIIBBo6OjvaKjo4nBA8JoYeiAAhADJIKNAVcM1w43EG4F3FKYMwD5VTVUBOW+rQAA
+AABJRU5ErkJggg==
+------=_Part_39153_1948278376.1398536628629--

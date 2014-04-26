@@ -1,0 +1,856 @@
+Message-ID: <118868195.39194.1398537406476.JavaMail.svc_confluence_prod@node209>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_39193_929825374.1398537406474"
+
+------=_Part_39193_929825374.1398537406474
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Upgrading JIRA Manually</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Upgrading JIRA Manually</h1>
+    <div class=3D"Section1">
+        <div class=3D"sectionColumnWrapper">
+<div class=3D"sectionMacro">
+<div class=3D"sectionMacroRow">
+<div class=3D"columnMacro">
+<p>This page describes how to upgrade JIRA installations that don't support=
+ the rapid upgrade method or fallback method. You should use this method to=
+ upgrade JIRA if you meet any of the following criteria:</p>
+<ul>
+<li>You use a WAR distribution of JIRA version 4.0.0 or later.</li>
+<li>You use JIRA 4.0.0 or later on Solaris.</li>
+<li>You use JIRA 4.0.0 =E2=80=93 4.2.x on Windows or Linux.</li>
+</ul>
+<p>See&nbsp;<a href=3D"/display/JIRA/Upgrading+JIRA">Upgrading JIRA</a> for=
+ more information on the methods you can use to upgrade JIRA.</p>
+</div>
+<div class=3D"columnMacro" style=3D"width:300px;min-width:300px;max-width:3=
+00px;">
+<div class=3D"panel" style=3D"border-width: 1px;">
+<div class=3D"panelContent">=20
+<p><strong>On this page:</strong></p>
+<style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1398537405831 {padding: 0px;}
+div.rbtoc1398537405831 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1398537405831 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1398537405831">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#UpgradingJIRAManually-1.Beforeyoustart">1. Before you start=
+</a></li>=20
+<li><a href=3D"#UpgradingJIRAManually-2.Backingup">2. Backing up</a></li>=
+=20
+<li><a href=3D"#UpgradingJIRAManually-3.SettingupyournewJIRAinstallation">3=
+. Setting up your new JIRA installation</a></li>=20
+<li><a href=3D"#UpgradingJIRAManually-4.Postupgradechecksandtasks">4. Post =
+upgrade checks and tasks</a></li>=20
+</ul>=20
+</div>=20
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+<h2 id=3D"UpgradingJIRAManually-1.Beforeyoustart">1. Before you start</h2>
+<p></p>
+<ul>
+<li><strong>Read about the new version</strong> - Review the release notes =
+and upgrade notes for the version of JIRA that you are upgrading to. See&nb=
+sp;<a href=3D"/display/JIRA/Production+Releases">Production Releases</a>. I=
+f you plan to skip a few JIRA versions during your upgrade, <strong>we stro=
+ngly recommend</strong> that you read the upgrade guides for all major vers=
+ions between your current version and the version to which you are upgradin=
+g. Refer to <a href=3D"/display/JIRA/Important+Version-Specific+Upgrade+Not=
+es">Important Version-Specific Upgrade Notes</a> for quick links to these g=
+uides.</li>
+<li><strong>Check your license</strong> - Verify that your <a href=3D"/disp=
+lay/JIRA/Updating+your+JIRA+License+Details">license support period</a> is =
+still valid.</li>
+<li><strong>Check for&nbsp;</strong><a href=3D"/display/JIRAKB/Browse+JIRA+=
+Articles+by+Version">known issues</a> - Use the <a href=3D"/display/JIRAKB"=
+>JIRA Knowledge Base</a> to search for any issues in the new version that w=
+ill affect you.</li>
+<li><strong>Check for compatibility</strong>: <br />
+<ul>
+<li>Confirm that your operating system, database, <a href=3D"/display/JIRA/=
+Supported+Platforms"><span class=3D"confluence-link">other applicable <span=
+ class=3D"confluence-link">platforms</span></span></a> and hardware still c=
+omply with the <a href=3D"/display/JIRA/JIRA+Requirements">requirements</a>=
+ for JIRA 6.3 EAP. The <a href=3D"/display/JIRA/End+of+Support+Announcement=
+s+for+JIRA">End of Support Announcements for JIRA</a> page also has importa=
+nt information regarding platform support for future versions of JIRA.</li>
+<li>If you have installed JIRA plugins (i.e. not included with JIRA), verif=
+y that they will be compatible with the version of JIRA you are upgrading t=
+o. You can find a plugin's compatibility information from the plugin's home=
+ page on the <a href=3D"https://plugins.atlassian.com/search/by/jira" class=
+=3D"external-link" rel=3D"nofollow">Atlassian Plugin Exchange</a>.</li>
+<li>Some anti-virus or other Internet security tools may interfere with the=
+ JIRA upgrade process and prevent the process from completing successfully.=
+ If you experience or anticipate experiencing such an issue with your anti-=
+virus/Internet security tool, disable this tool before proceeding with the =
+JIRA upgrade.</li>
+</ul></li>
+</ul>
+<p></p>=20
+<div class=3D"aui-message warning shadowed information-macro">=20
+<span class=3D"aui-icon icon-warning">Icon</span>=20
+<div class=3D"message-content">=20
+<p>We strongly recommend performing your upgrade in a test environment firs=
+t. Do not upgrade your production JIRA server until you are satisfied that =
+your test environment upgrade has been successful.</p>
+<ul>
+<li>If you have any problems with your test environment upgrade which you c=
+annot resolve, create an issue at our <a class=3D"external-link" href=3D"ht=
+tps://support.atlassian.com" rel=3D"nofollow">support site</a> so that we c=
+an assist you.</li>
+<li>If you have any problems during the upgrade of your production JIRA ser=
+ver, do not allow your users to start using this server. Instead:<br />
+<ul>
+<li>Continue to use your old JIRA server =E2=80=94 this will help ensure th=
+at you do not lose production data.</li>
+<li>Also create an issue at our <a class=3D"external-link" href=3D"https://=
+support.atlassian.com" rel=3D"nofollow">support site</a> so that we can hel=
+p you resolve the problems with your upgrade.</li>
+</ul></li>
+</ul>=20
+</div>=20
+</div>=20
+<p><span class=3D"confluence-anchor-link" id=3D"UpgradingJIRAManually-backi=
+ngup"></span></p>
+<h2 id=3D"UpgradingJIRAManually-2.Backingup">2. Backing up</h2>
+<p>Before you begin the JIRA upgrade, we strongly recommend that you back u=
+p your existing JIRA installation.</p>
+<p></p>
+<h4 id=3D"UpgradingJIRAManually-2.1StopusersfromupdatingJIRAdata">2.1 Stop =
+users from updating JIRA data</h4>
+<p>During the upgrade process, you'll export JIRA's database from your exis=
+ting JIRA installation (via an XML backup) and then restore this backup int=
+o a new JIRA installation. To ensure that the data in the XML backup is con=
+sistent with the latest data in the system, you must temporarily restrict a=
+ccess to JIRA so users can't update the data. Refer to the <a href=3D"/disp=
+lay/JIRA/Preventing+users+from+accessing+JIRA+during+backups">Preventing us=
+ers from accessing JIRA during backups</a> page for more information.</p>
+<p><img class=3D"emoticon emoticon-warning" src=3D"0e1fbfd791fc0c13ec1bc964=
+0e680006" data-emoticon-name=3D"warning" alt=3D"(warning)" width=3D"16" hei=
+ght=3D"16" /> <strong>Be aware!</strong> Inconsistent XML backups cannot be=
+ restored!</p>
+<h4 id=3D"UpgradingJIRAManually-2.2Backupyourdatabase">2.2 Back up your dat=
+abase</h4>
+<p>Perform an <a href=3D"/display/JIRA/Backing+Up+Data">XML backup</a> of y=
+our existing JIRA installation's external database. For large JIRA installa=
+tions, this process may require several hours to complete.</p>=20
+<div class=3D"aui-message success shadowed information-macro">=20
+<span class=3D"aui-icon icon-success">Icon</span>=20
+<div class=3D"message-content">=20
+<p>The 'embedded database' is the HSQLDB database supplied with JIRA for ev=
+aluation purposes only. If you accidentally use the HSQLDB database in a pr=
+oduction system, perform an XML backup of this database and continue on wit=
+h this procedure.</p>=20
+</div>=20
+</div>=20
+<h4 id=3D"UpgradingJIRAManually-2.3BackupyourJIRAHomedirectory">2.3 Back up=
+ your JIRA Home directory</h4>
+<ol>
+<li>Shut down JIRA.</li>
+<li>Locate the <a href=3D"/display/JIRA/JIRA+Home+Directory">JIRA Home dire=
+ctory</a>. You can find information about the location of the directory by =
+navigating to the&nbsp;<code>&lt;jira-application-dir&gt;/WEB-INF/classes/j=
+ira-application.properties</code> file in your <a href=3D"/display/JIRA/JIR=
+A+Installation+Directory">JIRA Installation Directory</a>. Alternatively, y=
+ou can open the <a href=3D"/display/JIRA/Using+the+JIRA+Configuration+Tool"=
+>JIRA Configuration Tool</a> to see the directory that is set as your JIRA =
+Home.</li>
+<li>Navigate to the directory specified in the configuration file and creat=
+e a backup of it in another directory.</li>
+<li><img class=3D"emoticon emoticon-cross" src=3D"ba1b229ee1d0418657b4c2498=
+7a16dd7" data-emoticon-name=3D"cross" alt=3D"(error)" width=3D"16" height=
+=3D"16" />&nbsp;Delete the file &lt;jira-home&gt;/dbconfig.xml as soon as t=
+he backup is complete.</li>
+</ol>
+<h4 id=3D"UpgradingJIRAManually-2.4Backupyourattachmentsandindexdirectories=
+iflocatedoutsideyourJIRAHomedirectory">2.4 Back up your attachments and ind=
+ex directories if located outside your JIRA Home directory</h4>
+<p>If the attachments and index directories are located outside of your <a =
+href=3D"/display/JIRA/JIRA+Home+Directory">JIRA Home Directory</a>, you mus=
+t back them up separately. These pages describe how to find out where these=
+ directories are located in your implementation:</p>
+<ul>
+<li>Your attachments directory =E2=80=94 Refer to <a href=3D"/display/JIRA/=
+Configuring+File+Attachments">Configuring File Attachments</a> page in the =
+documentation for your version of JIRA.</li>
+<li>Your index directory =E2=80=94 Refer to <a href=3D"/display/JIRA/Search=
++Indexing">Search Indexing</a> page in the documentation for your version o=
+f JIRA.</li>
+</ul>
+<p>Also refer to <a href=3D"/display/JIRA/Backing+Up+Data">Backing Up Data<=
+/a> for more information about backing up attachments in JIRA.</p>
+<h4 id=3D"UpgradingJIRAManually-2.5BackupyourJIRAInstallationdirectory">2.5=
+ Back up your JIRA Installation directory</h4>
+<p>The 'JIRA Installation Directory' is the directory into which the JIRA a=
+pplication files and libraries were extracted when JIRA was installed.</p>
+<p></p>
+<h2 id=3D"UpgradingJIRAManually-3.SettingupyournewJIRAinstallation">3. Sett=
+ing up your new JIRA installation</h2>=20
+<div class=3D"aui-message hint shadowed information-macro">=20
+<span class=3D"aui-icon icon-hint">Icon</span>=20
+<div class=3D"message-content">=20
+<p>If you are running a 'mission-critical' JIRA server, we highly recommend=
+ performing the remaining steps of this guide in a test environment (e.g. u=
+sing a separate test JIRA database and a copy of your JIRA Home directory) =
+before performing the upgrade in production. <span>&nbsp;</span></p>=20
+</div>=20
+</div>=20
+<h4 id=3D"UpgradingJIRAManually-3.1InstallthenewversionofJIRA">3.1 Install =
+the new version of JIRA</h4>
+<p>Download and extract the JIRA distribution you require to a new director=
+y. <strong>Do not overwrite your existing JIRA installation. Ensure this ha=
+s been shut down and install the new JIRA version to a new location.</stron=
+g></p>
+<p>Follow the installation instructions for either:</p>
+<ul>
+<li><a href=3D"/display/JIRA/Installing+JIRA">Installing JIRA</a> (just Ste=
+p one), or</li>
+<li><a href=3D"/display/JIRA/Installing+JIRA+WAR">Installing JIRA WAR</a> (=
+Steps one through seven)</li>
+</ul>
+<p><img class=3D"emoticon emoticon-information" src=3D"6106287951041e6fefc6=
+ef9c0a1d5eea" data-emoticon-name=3D"information" alt=3D"(info)" width=3D"16=
+" height=3D"16" /> If you are using JIRA WAR, remember to build your new JI=
+RA web application and deploy it to your server. For specific instructions,=
+ refer to the JIRA WAR installation page for your application server within=
+ the <a href=3D"/display/JIRA/Installing+JIRA+WAR">Installing JIRA WAR</a> =
+section.</p>
+<h4 id=3D"UpgradingJIRAManually-3.2PointyournewJIRAto(acopyof)yourexistingJ=
+IRAHomedirectory">3.2 Point your new JIRA to (a copy of) your existing JIRA=
+ Home directory</h4>
+<p><span class=3D"confluence-anchor-link" id=3D"UpgradingJIRAManually-copyj=
+irahome"></span>If your new JIRA 6.3 EAP installation is on a new server, <=
+strong>copy the backup of your existing JIRA Home Directory</strong> from t=
+he old server to the new server before proceeding.</p>
+<p><strong>To set up a &quot;recommended&quot; (not WAR) distribution:</str=
+ong></p>
+<ol>
+<li>Open the <a href=3D"/display/JIRA/Using+the+JIRA+Configuration+Tool">JI=
+RA Configuration Tool</a>.</li>
+<li>Click the <strong>JIRA Home</strong> tab.</li>
+<li>Update the <strong>JIRA Home Directory </strong>field:<br />
+<ul>
+<li>If your JIRA 6.3 EAP installation is on a new server, update the <stron=
+g>JIRA Home Directory</strong> field to the path of your <a href=3D"#Upgrad=
+ingJIRAManually-copyjirahome">copied</a> JIRA Home directory.</li>
+<li>If your JIRA 6.3 EAP installation is on the same server, update the <st=
+rong>JIRA Home Directory</strong> field to the path of your <strong>existin=
+g</strong> JIRA Home directory.<br /> <img class=3D"emoticon emoticon-infor=
+mation" src=3D"6106287951041e6fefc6ef9c0a1d5eea" data-emoticon-name=3D"info=
+rmation" alt=3D"(info)" width=3D"16" height=3D"16" /> For more information =
+about this directory, see <a href=3D"/display/JIRA/JIRA+Home+Directory">JIR=
+A Home Directory</a>.</li>
+</ul></li>
+</ol>
+<p><strong>To set up a WAR distribution:</strong></p>
+<ol>
+<li>Edit the <code>jira-application.properties</code> file located within t=
+he <code>&lt;jira-application-dir&gt;/WEB-INF/classes</code> subdirectory o=
+f your new JIRA 6.3 EAP Installation Directory <a href=3D"/display/JIRA/JIR=
+A+Installation+Directory">JIRA Installation Directory</a>.</li>
+<li>Update the <code>jira.home&nbsp;</code>property in this file to the pat=
+h of the new JIRA Home Directory:<br />
+<ul>
+<li>If your JIRA 6.3 EAP installation is on a new server, update the <code>=
+jira.home</code> property to the path of your <a href=3D"#UpgradingJIRAManu=
+ally-copyjirahome">copied</a> JIRA Home directory.</li>
+<li>If your JIRA 6.3 EAP installation is on the same server, update the <co=
+de>jira.home</code> property to the path of your <strong>existing</strong> =
+JIRA Home directory.<br /> <img class=3D"emoticon emoticon-information" src=
+=3D"6106287951041e6fefc6ef9c0a1d5eea" data-emoticon-name=3D"information" al=
+t=3D"(info)" width=3D"16" height=3D"16" /> For more information about this =
+directory, see <a href=3D"/display/JIRA/JIRA+Home+Directory">JIRA Home Dire=
+ctory</a>.</li>
+</ul></li>
+<li>Remove the '#' at the beginning of the&nbsp;<code>jira.home&nbsp;</code=
+>line (so that JIRA no longer regards this line as a comment).</li>
+<li>Save your updated <code>jira-application.properties</code> file.</li>
+</ol>
+<p><img class=3D"emoticon emoticon-tick" src=3D"0a3e9410b11b3d613f2a3000c5c=
+ae84e" data-emoticon-name=3D"tick" alt=3D"(tick)" width=3D"16" height=3D"16=
+" /> You can also set your JIRA Home Directory's location by defining an op=
+erating system environment variable <code>JIRA_HOME</code>. This value of t=
+his variable takes precedence over the value of the <code>jira.home</code> =
+property in the <code>jira-application.properties</code> file in your <a hr=
+ef=3D"/display/JIRA/JIRA+Installation+Directory">JIRA Installation Director=
+y</a>. See <a href=3D"/display/JIRA/Setting+your+JIRA+Home+Directory">Setti=
+ng your JIRA Home Directory</a> for details.</p>
+<p></p>
+<p><span class=3D"confluence-anchor-link" id=3D"UpgradingJIRAManually-creat=
+enewdb"></span></p>
+<h4 id=3D"UpgradingJIRAManually-3.3ConnectthenewversionofJIRAtoanew,emptyda=
+tabase">3.3 Connect the new version of JIRA to a new, empty database</h4>
+<p>Create a new, empty database that your new JIRA installation will use to=
+ store its data.</p>
+<p>Follow the appropriate '<strong>Connecting JIRA to...</strong>' instruct=
+ions for your database from stage 2, although from stage 4 of that procedur=
+e, be aware of the yellow note below:</p>
+<ul>
+<li><a href=3D"/display/JIRA/Connecting+JIRA+to+PostgreSQL">Connecting JIRA=
+ to PostgreSQL</a></li>
+<li><a href=3D"/display/JIRA/Connecting+JIRA+to+MySQL">Connecting JIRA to M=
+ySQL</a></li>
+<li><a href=3D"/display/JIRA/Connecting+JIRA+to+Oracle">Connecting JIRA to =
+Oracle</a></li>
+<li><a href=3D"/display/JIRA/Connecting+JIRA+to+SQL+Server+2005">Connecting=
+ JIRA to SQL Server 2005</a></li>
+<li><a href=3D"/display/JIRA/Connecting+JIRA+to+SQL+Server+2008">Connecting=
+ JIRA to SQL Server 2008</a></li>
+</ul>=20
+<div class=3D"aui-message warning shadowed information-macro">=20
+<span class=3D"aui-icon icon-warning">Icon</span>=20
+<div class=3D"message-content">=20
+<p>If you are using a database (called <strong>jiradb</strong>, for example=
+) with your existing JIRA installation and the database for your new JIRA i=
+nstallation is running on the same machine or database server, create your =
+new database with a different name (e.g. something intuitive like <strong>j=
+iradb_440</strong> for JIRA 4.4.0). However, ensure the new database has id=
+entical access permissions to the old JIRA database. Consult your database =
+administrator if you need assistance with this.</p>=20
+</div>=20
+</div>=20
+<p><img class=3D"emoticon emoticon-information" src=3D"6106287951041e6fefc6=
+ef9c0a1d5eea" data-emoticon-name=3D"information" alt=3D"(info)" width=3D"16=
+" height=3D"16" /> You do not need to create a new database if you are usin=
+g the embedded HSQL database.</p>
+<p></p>
+<p><span class=3D"confluence-anchor-link" id=3D"UpgradingJIRAManually-confi=
+guringnewjiraasold"></span></p>
+<h4 id=3D"UpgradingJIRAManually-3.4MigrateyourexistingJIRAconfigurationsove=
+rtoyournewJIRAinstallation">3.4 Migrate your existing JIRA configurations o=
+ver to your new JIRA installation</h4>
+<p>If you have modified properties in configuration files of your existing =
+JIRA installation, make the same modifications in your new JIRA installatio=
+n. However, because the properties in the configuration files may have chan=
+ged between versions, you cannot simply copy the configuration files from y=
+our existing installation and replace the equivalent files in the new insta=
+llation.</p>
+<p>For each file you have modified in your existing JIRA installation, you =
+need to <strong>manually edit each equivalent file in your new JIRA install=
+ation and re-apply your modifications</strong>. If a file is not present in=
+ your new JIRA installation (for example, <code>osuser.xml</code> in recent=
+ JIRA versions), then simply copy that file over to your new JIRA installat=
+ion.</p>
+<p>The table below lists the most commonly modified files and their locatio=
+ns within your <a href=3D"/display/JIRA/JIRA+Installation+Directory">JIRA I=
+nstallation Directory</a>:</p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>File</p></th>
+<th class=3D"confluenceTh"><p>Location in 'recommended' (formerly 'Standalo=
+ne') JIRA distributions</p></th>
+<th class=3D"confluenceTh"><p>Location in JIRA WAR</p></th>
+<th class=3D"confluenceTh"><p>Description</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>jira-application.properties</strong><=
+/p></td>
+<td class=3D"confluenceTd"><p><code>atlassian-jira/WEB-INF/classes</code></=
+p></td>
+<td class=3D"confluenceTd"><p><code>webapp/WEB-INF/classes</code></p></td>
+<td class=3D"confluenceTd"><p>Location of the <a href=3D"/display/JIRA/JIRA=
++Home+Directory">JIRA Home Directory</a> and <a href=3D"/display/JIRA043/Ad=
+vanced+JIRA+configuration+with+jira-application.properties">Advanced JIRA C=
+onfiguration</a> in JIRA 4.3.x and earlier. <br class=3D"atl-forced-newline=
+" /> <br class=3D"atl-forced-newline" /> Any custom property values defined=
+ in the <code>jira-application.properties</code> file of your existing JIRA=
+ 4.3.x (or earlier) installation must be migrated across to the <code>jira-=
+application.properties</code> file of your new JIRA 6.3 EAP installation <e=
+m>before you start your new JIRA installation</em>. <br class=3D"atl-forced=
+-newline" /> <br class=3D"atl-forced-newline" /> Upon starting your new JIR=
+A installation, any custom property values in the <code>jira-application.pr=
+operties</code> file will automatically be migrated across to either the <a=
+ href=3D"/display/JIRA/Advanced+JIRA+Configuration#AdvancedJIRAConfiguratio=
+n-jiradatabase">JIRA database</a> or <a href=3D"/display/JIRA/Advanced+JIRA=
++Configuration">jira-config.properties</a> file. <code>jira.home</code> is =
+the only property of the <code>jira-application.properties</code> file subs=
+equently used by JIRA.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>setenv.bat (Windows) or setenv.sh (Li=
+nux)</strong></p></td>
+<td class=3D"confluenceTd"><p><code>bin</code></p></td>
+<td class=3D"confluenceTd"><p>Application server's <code>bin</code> directo=
+ry</p></td>
+<td class=3D"confluenceTd"><p><a href=3D"/display/JIRA/Increasing+JIRA+Memo=
+ry">Increasing JIRA Memory</a></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>osuser.xml</strong><br /> (not requir=
+ed if upgrading from JIRA 4.3.0 or later)</p></td>
+<td class=3D"confluenceTd"><p><code>atlassian-jira/WEB-INF/classes</code></=
+p></td>
+<td class=3D"confluenceTd"><p><code>webapp/WEB-INF/classes</code></p></td>
+<td class=3D"confluenceTd"><p>Modified if you have <a href=3D"/display/JIRA=
+/Connecting+to+an+LDAP+Directory">integrated LDAP with JIRA</a>, <a href=3D=
+"/display/JIRA/Connecting+to+Crowd+or+Another+JIRA+Server+for+User+Manageme=
+nt">integrated Crowd with JIRA</a>, or if you are using a custom form of ex=
+ternal user management or user authentication.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>seraph-config.xml</strong></p></td>
+<td class=3D"confluenceTd"><p><code>atlassian-jira/WEB-INF/classes</code></=
+p></td>
+<td class=3D"confluenceTd"><p><code>webapp/WEB-INF/classes</code></p></td>
+<td class=3D"confluenceTd"><p>Modified if you have <a href=3D"/display/JIRA=
+/Connecting+to+Crowd+or+Another+JIRA+Server+for+User+Management">integrated=
+ Crowd with JIRA</a>.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>server.xml</strong></p></td>
+<td class=3D"confluenceTd"><p><code>conf</code></p></td>
+<td class=3D"confluenceTd"><p>Application server's <code>conf</code> direct=
+ory</p></td>
+<td class=3D"confluenceTd"><p>Modified in the following situations:</p>
+<ul>
+<li>If you had previously <a href=3D"/display/JIRA/Changing+JIRA%27s+TCP+Po=
+rts">configured JIRA's TCP ports</a> differently from their defaults.</li>
+<li>If you had implemented <a href=3D"/display/JIRA/Running+JIRA+over+SSL+o=
+r+HTTPS">SSL</a>.</li>
+<li>When <a href=3D"/display/JIRA043/Connecting+JIRA+to+a+Database">connect=
+ing JIRA to a database</a> in JIRA 4.3.x and earlier.</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img class=3D"emoticon emoticon-tick" src=3D"0a3e9410b11b3d613f2a3000c5c=
+ae84e" data-emoticon-name=3D"tick" alt=3D"(tick)" width=3D"16" height=3D"16=
+" /> The <a href=3D"/display/JIRA/Important+Version-Specific+Upgrade+Notes"=
+>version-specific upgrade notes</a> contain details on properties which may=
+ have changed in these commonly modified files.</p>
+<p>In addition to the files above, you should also consider and/or perform =
+the following configurations as part of the upgrade process:</p>
+<ul>
+<li><strong>Using JIRA with <a href=3D"http://confluence.atlassian.com/http=
+://www.atlassian.com/software/crowd/" class=3D"external-link" rel=3D"nofoll=
+ow">Atlassian's Crowd</a>?</strong> =E2=80=94 If you are using Crowd with J=
+IRA, configure your new JIRA to talk to Crowd as described in <a href=3D"/d=
+isplay/JIRA/Connecting+to+Crowd+or+Another+JIRA+Server+for+User+Management"=
+>Integrating Crowd with JIRA</a>.
+<ul>
+<li>Remember to configure Crowd to grant JIRA's new hostname/IP access:&nbs=
+p;<a href=3D"/display/CROWD/Specifying+an+Application%27s+Address+or+Hostna=
+me">Specifying an Application's Address or Hostname</a></li>
+</ul></li>
+<li><strong>Allocating additional memory to JIRA</strong> =E2=80=94 If you =
+had previously allocated additional memory to JIRA, do the same for your ne=
+w JIRA instance. For more information refer to <a href=3D"/display/JIRA/Inc=
+reasing+JIRA+Memory">Increasing JIRA memory</a>.</li>
+<li><strong>Plugins</strong> =E2=80=94 For any plugins that you had install=
+ed in your old JIRA, download the plugin version for your new version of JI=
+RA from the <a href=3D"http://plugins.atlassian.com" class=3D"external-link=
+" rel=3D"nofollow">http://plugins.atlassian.com</a> site.</li>
+<li><strong>Character encoding</strong> =E2=80=94 Ensure that character enc=
+oding (i.e. locale) is the same on the new and old locations.&nbsp;Your new=
+ version of JIRA may not function correctly if attachments are moved betwee=
+n two system with incompatible encoding.</li>
+<li><strong>Customisations</strong> =E2=80=94 If you had made any customisa=
+tions (code, templates or configuration files), copy over compatible versio=
+ns of these changes to the new JIRA. (The developers within your organisati=
+on who made the customisations to your old version will need to build and t=
+est equivalent changes for the new version, and provide you with the files =
+to copy to your upgraded JIRA installation.)</li>
+<li><strong>(Optional) Running JIRA on a different port</strong> =E2=80=94 =
+If your new JIRA is installed on the same machine as your old JIRA, you may=
+ wish to make sure it runs on a different port (in case you ever need to re=
+start your old JIRA). See <a href=3D"/display/JIRA/Changing+JIRA%27s+TCP+Po=
+rts">Changing JIRA's TCP Ports</a> for details.</li>
+</ul>
+<p></p>
+<p><span class=3D"confluence-anchor-link" id=3D"UpgradingJIRAManually-start=
+JIRA"></span></p>
+<h4 id=3D"UpgradingJIRAManually-3.5StartyournewversionofJIRA">3.5 Start you=
+r new version of JIRA</h4>
+<p></p>
+<ol>
+<li>Verify that your old JIRA installation is shut down =E2=80=94 if this J=
+IRA server is still operating, shut it down.</li>
+<li>If you installed the JIRA WAR distribution within <strong>Tomcat</stron=
+g>, <strong>delete the Tomcat work directory before restarting JIRA</strong=
+>. If you do not do this, users may encounter errors when they try to displ=
+ay JIRA pages.</li>
+<li>Start up your new version of JIRA. For:<br />
+<ul>
+<li><strong>'Recommended' distributions</strong>&nbsp;=E2=80=94 follow the =
+<a href=3D"/display/JIRA/Installing+JIRA+from+an+Archive+File+on+Windows%2C=
++Linux+or+Solaris#InstallingJIRAfromanArchiveFileonWindows,LinuxorSolaris-s=
+tarting_JIRA">Starting JIRA</a> instructions.</li>
+<li><strong>WAR distributions</strong> =E2=80=94 follow the instructions fo=
+r starting JIRA for your application server within the <a href=3D"/display/=
+JIRA/Installing+JIRA+WAR">Installing JIRA WAR</a> section.<br /><img class=
+=3D"emoticon emoticon-information" src=3D"6106287951041e6fefc6ef9c0a1d5eea"=
+ data-emoticon-name=3D"information" alt=3D"(info)" width=3D"16" height=3D"1=
+6" /> During the startup process, your new JIRA installation will create an=
+y required database indexes. If you created any custom database indexes, pl=
+ease check them afterwards and remove any that duplicate the indexes added =
+by JIRA.</li>
+</ul></li>
+</ol>=20
+<div class=3D"aui-message warning shadowed information-macro">=20
+<p class=3D"title">Do not restart your old JIRA installation...</p>=20
+<span class=3D"aui-icon icon-warning">Icon</span>=20
+<div class=3D"message-content">=20
+<p>If your new JIRA 6.3 EAP installation is on the same server as your old =
+one, it may still be configured to use the same JIRA Home directory as your=
+ new JIRA installation. Running two separate JIRA installations which share=
+ a common JIRA Home directory can lead to serious data corruption.</p>
+<p>Nevertheless, we recommend that you do not delete any aspect (or backed =
+up component) of your old JIRA installation, until you are satisfied that y=
+our upgraded JIRA installation is functioning as expected.</p>=20
+</div>=20
+</div>
+<p></p>
+<p><span class=3D"confluence-anchor-link" id=3D"UpgradingJIRAManually-step3=
+6"></span></p>
+<h4 id=3D"UpgradingJIRAManually-3.6ImportyouroldJIRAdataintoyournewJIRA">3.=
+6 Import your old JIRA data into your new JIRA</h4>
+<p>After you have started your new JIRA installation, import the data from =
+your old instance into the new instance. You will need the backup file of d=
+ata from your old JIRA that you created earlier in these instructions (<a h=
+ref=3D"#UpgradingJIRAManually-backingup">above</a>).</p>
+<p>To import your old JIRA data into your new JIRA:</p>
+<ol>
+<li>Log in as a user with the 'JIRA System Administrators' <a href=3D"/disp=
+lay/JIRA051/Managing+Global+Permissions">global permission</a>.</li>
+<li>Select <strong>Administration &gt; System &gt; Import &amp; Export &gt;=
+ Restore System</strong> (tab) to open the 'Restore JIRA data from Backup' =
+page.<br /> <img class=3D"emoticon emoticon-tick" src=3D"0a3e9410b11b3d613f=
+2a3000c5cae84e" data-emoticon-name=3D"tick" alt=3D"(tick)" width=3D"16" hei=
+ght=3D"16" /> <a href=3D"/display/JIRA051/Using+Keyboard+Shortcuts">Keyboar=
+d shortcut</a>: <strong>'g' + 'g' +</strong> type <strong>'rest'</strong></=
+li>
+<li>In the <strong>File name</strong> field, specify the XML backup file yo=
+u created previously during the export process (<a href=3D"#UpgradingJIRAMa=
+nually-backingup">above</a>). That zipped file should contain two xml files=
+: <code>activeobjects.xml</code> and <code>entities.xml</code>. Both of the=
+se files must be included in the zipped file for the import process to work=
+.</li>
+<li>Restore the attachments directory that you backed up previously, into t=
+he attachments directory of your new JIRA. (See <a href=3D"/display/JIRA/Re=
+storing+Data">Restoring Data</a>.)<br /> <img class=3D"emoticon emoticon-in=
+formation" src=3D"6106287951041e6fefc6ef9c0a1d5eea" data-emoticon-name=3D"i=
+nformation" alt=3D"(info)" width=3D"16" height=3D"16" /> Avoid passing thro=
+ugh a proxy when performing an XML restore, especially if your JIRA instanc=
+e is very large. Using a proxy may cause timeout errors.</li>
+<li>Access JIRA via your web browser again and log in using a username from=
+ your previous JIRA installation.</li>
+<li>Take a quick look around your JIRA site to confirm that your projects a=
+nd issues are present and everything looks normal. You should see the new J=
+IRA version number in the page footer.</li>
+</ol>
+<p></p>
+<h2 id=3D"UpgradingJIRAManually-4.Postupgradechecksandtasks">4. Post upgrad=
+e checks and tasks</h2>
+<p>It is strongly recommended that you perform the following checks and tas=
+ks after you have started your new instance of JIRA:</p>
+<ol>
+<li>Check your <a href=3D"/pages/viewpage.action?pageId=3D16121981">server =
+logs</a> for error messages, even if JIRA appears to be running correctly. =
+If there are any errors there that you cannot resolve, create a support cas=
+e in <a href=3D"https://support.atlassian.com" class=3D"external-link" rel=
+=3D"nofollow">https://support.atlassian.com</a>, attach your log file and w=
+e will advise you on the errors.</li>
+<li>If you were previously using <a href=3D"/display/JIRA/Configuring+JIRA+=
+Options#ConfiguringJIRAOptions-options">External User Management</a>, enabl=
+e it in the new JIRA instance.</li>
+<li>If you changed machines when upgrading, change the paths to the indexes=
+, attachments and backup directories, from within the <strong>Administratio=
+n</strong> section of JIRA.</li>
+<li>Enable email, if you disabled it during testing.</li>
+<li>If you migrated any customisations from your old JIRA to the new JIRA, =
+ensure that they are tested thoroughly.<br />
+<ol>
+<li>If you had downloaded plugins for the new version of JIRA, <a href=3D"/=
+display/JIRA/Managing+Add-ons">install the downloaded JAR file(s)</a> in yo=
+ur new JIRA version and carry out any other required installation for the p=
+lugin.</li>
+<li>If the plugin has a properties file, apply the same changes to it as yo=
+u had in the old properties file (don't just copy over the old properties f=
+ile).</li>
+</ol></li>
+<li>Once you have confirmed that the new server is working correctly, ensur=
+e that the production license is updated for the new server ID, as follows:=
+<br />
+<ol>
+<li>Log in to&nbsp;<a href=3D"https://my.atlassian.com" class=3D"external-l=
+ink" rel=3D"nofollow">https://my.atlassian.com</a>.</li>
+<li>Locate the appropriate license.</li>
+<li>Edit the Server ID, as per the new production Server ID, and save it.</=
+li>
+<li>Update the production license in the new server.</li>
+</ol></li>
+</ol>
+<p></p>
+<p><strong>Congratulations! You have completed your JIRA migration/upgrade.=
+</strong></p>
+<h5 id=3D"UpgradingJIRAManually-SeeAlso">See Also</h5>
+<p><a href=3D"/display/JIRA/Disabling+Auto-Export">Disabling Auto-Export</a=
+><br /> <a href=3D"/display/JIRA/Restoring+Data">Restoring Data</a><br /> <=
+a href=3D"/display/JIRA/Upgrading+JIRA">Upgrading JIRA</a><br /> <a href=3D=
+"/display/JIRA/Switching+Application+Servers+to+Apache+Tomcat">Switching Ap=
+plication Servers to Apache Tomcat</a><br /> <a href=3D"/display/JIRA/Switc=
+hing+Databases">Switching Databases</a></p>
+<p>&nbsp;</p>
+    </div>
+</body>
+</html>
+------=_Part_39193_929825374.1398537406474
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/0e1fbfd791fc0c13ec1bc9640e680006
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAA3NCSVQICAjb4U/gAAAAY1BMVEX/
+///ht0zds0vds0vds0vds0vds0vds0vbsUrZr0rZr0rZr0rXrUr/01H90VH7z1D5zVD3y0/1yk/z
+x0/wxE7swU7rwE3pvk3nvE3nu0zlukzjuUzftUvds0vZr0rXrUqBWzo+M1gKAAAAIXRSTlMAESJE
+VWZ3maq7zO7u//////////////////////////9zCPjNAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+HHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABR0RVh0Q3JlYXRpb24gVGlt
+ZQA2LzEvMTM4qUXQAAAAe0lEQVQYlV2N2RaDIAwFo6LWNhdsrV1wif//lUUownHeMmeSEHkqZkUZ
+BVvLZSZaMVi6NJf8BB6SlroFjul2BDJg29BL8xfXGbvAlws/K7kHoaUNwYQgMPqklj4Kve4JWxy8
+XNKsBrGAcYm/EAXe7H7qtGI+Qool50Jnfgc2C3zDPO17AAAAAElFTkSuQmCC
+------=_Part_39193_929825374.1398537406474
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/0a3e9410b11b3d613f2a3000c5cae84e
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjklEQVQ4EWNkQAPcpkJp7Kp8Ltx6
+gqHIUl8vvV/98/anPV9Pv5uFLM4I4zByMAmKpajsZpPhNoaJYaN/Pfl69tWcO67/f/x7D5IHGwDS
+LFmmfZeZi0UQmyZ0sb/f/rx/3nVVGWQIE0gSZDOxmkHqQWpBesBskJ95LETTQBx8gIedh4GNhY3h
+199fYGXMfGxSfz/+es7M7ynVwSrMroRPs7qYGsPCkAlADzMznH92CaGUlYmTiRMY4ggRBgaQTcgA
+pHlD9DwGDVFVhjjDYGQpBpBecBggi8YYhjJ0ezWAhQJ1fBh2J65g4GbjYrjy8jqD/awAZKVgNgu6
+SKF1KgMnCwdYOFzXD0wvvbieoXJHM7pSMB/DBeuubkfRXLe3B6dmkEJmNnluG+RA3HvnEMPNt/cY
+bBUsGAq21jGsvrQRbCA24jswZTKColEoWH4mNgWExN6tfZjOBErboORJSDG6PEgPSC84DEBpG5Q8
+0RXh4oPUgvSA5MEGgNI0KG0T4xKQGlg+ABkAz40gDgiQmp0BQ16bzd1IdeoAAAAASUVORK5CYII=
+
+------=_Part_39193_929825374.1398537406474
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/ba1b229ee1d0418657b4c24987a16dd7
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABFklEQVQ4EWPkYWEW7NLVWGUhIujC
+QAI48eb9nrLLN8IYpxlq7yZVM8wekCGM51xt/sMEyKGZyNGErAfDAGYeHgbRwFAGEA0DILZcSSWK
+GEwOwwAhV08Gmcw8BpWeSWANIM0gtrCbFwNIDh2woAu8Xr+agVNZBawBpBEEuJRUGd7u2sYAkkMH
+GAaAFDzqaQerA9kKAiDNMDGwABKB4QWQHMjZnCqqSMpwMzEMgPkZ5uxv926DvQMKRGwAwwDpjFy4
+n0HOvlOSxwAzBBQ76AAjIYFcwG9pw/Bu9w64WpAYyOCnMyYz/P3yBS4OYmAYgCJLBAfDC0ToQVHC
+BMoQKCIkcEB6mQ++ebdFk5fHWIaLU4kEvQyw7AwANERa0Te1fdYAAAAASUVORK5CYII=
+------=_Part_39193_929825374.1398537406474
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/6106287951041e6fefc6ef9c0a1d5eea
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAG1BMVEX/
+//87c687c687c687c687c687c6////87c68225wXAAAACXRSTlMAEWaqu8zu///VQmatAAAACXBI
+WXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAA
+ABR0RVh0Q3JlYXRpb24gVGltZQA2LzEvMTM4qUXQAAAARklEQVQImWNgYFDu6DBiAALRDiAIZGBg
+zAAx2gQYWDvAIIBBo6OjvaKjo4nBA8JoYeiAAhADJIKNAVcM1w43EG4F3FKYMwD5VTVUBOW+rQAA
+AABJRU5ErkJggg==
+------=_Part_39193_929825374.1398537406474--
