@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: Evan Laske
 # @Date:   2014-04-07 23:21:58
-# @Last Modified by:   Evan Laske
-# @Last Modified time: 2014-04-26 01:06:00
+# @Last Modified by:   evan
+# @Last Modified time: 2014-04-26 02:16:50
 
 import urllib2
 import json
@@ -45,8 +45,11 @@ def chunk_read(response, chunk_size=8192, report_hook=None):
     total_size = int(total_size)
     bytes_so_far = 0
 
+    data_string = str()
+
     while 1:
         chunk = response.read(chunk_size)
+        data_string += chunk
         bytes_so_far += len(chunk)
 
         if not chunk:
@@ -55,15 +58,34 @@ def chunk_read(response, chunk_size=8192, report_hook=None):
         if report_hook:
             report_hook(bytes_so_far, chunk_size, total_size)
 
+    return data_string
+
+def chunk_save(response, filename, chunk_size=8192, report_hook=None):
+    total_size = response.info().getheader('Content-Length').strip()
+    total_size = int(total_size)
+    bytes_so_far = 0
+
+    with open(filename, 'wb') as f:
+        while 1:
+            chunk = response.read(chunk_size)
+            bytes_so_far += len(chunk)
+
+            if not chunk:
+                break
+
+            if report_hook:
+                report_hook(bytes_so_far, chunk_size, total_size)
+
+            f.write(chunk)
+
     return bytes_so_far
 
 def downloadTAR(url):
     response = urllib2.urlopen(url)
-    #chunk_read(response, report_hook=chunk_report)
-    print response.info()
-    print response.info().getheader('Content-Length')
-    response.read()
-    print 'Done read()'
+    response_info = response.info()
+    content_length = response.info().getheader('Content-Length')
+    #file_data = chunk_read(response, report_hook=chunk_report)
+    chunk_save(response, url.split('/')[-1], report_hook=chunk_report)
 
 def main():
     print getURL('current')
