@@ -10,7 +10,10 @@ import json
 import sys
 
 def getURL(feed):
-    base_url = 'https://my.atlassian.com/download/feeds/%s/jira.json'
+    # Base for previous versions
+    # base_url = 'https://my.atlassian.com/download/feeds/%s/jira.json'
+    # base_url = 'https://my.atlassian.com/download/feeds/%s/jira-core.json'
+    base_url = 'https://my.atlassian.com/download/feeds/%s/jira-software.json'
     return base_url % feed
 
 def getFeed(url):
@@ -22,7 +25,7 @@ def getFeed(url):
     return data
 
 def getDownloadData(download_data):
-    # Get the normal tar.gz download file - single it out and remove the WAR one.
+    # Get the regular tar.gz file and remove the WAR version
     return [e for e in download_data if 'TAR.GZ' in e['description'] and 'WAR' not in e['description']]
 
 def getDownloadURL(download):
@@ -80,7 +83,7 @@ def chunk_save(response, filename, chunk_size=8192, report_hook=None):
 
     return bytes_so_far
 
-def downloadTAR(url):
+def downloadFile(url):
     response = urllib2.urlopen(url)
     response_info = response.info()
     content_length = response.info().getheader('Content-Length')
@@ -104,9 +107,9 @@ def main():
 
     print defaultDownload()['version']
 
-    #print getDownload(getFeed(getURL('current')))
-    #url = getDownloadURL(getDownload(getFeed(getURL('current'))))
-    #downloadTAR(url)
+    current = getDownloadData(getFeed(getURL('current')))
+    for dl in current:
+        downloadFile(getDownloadURL(dl))
 
 # Standard main call
 if __name__ == "__main__":
